@@ -1,11 +1,21 @@
 #!/usr/bin/env node
 
 const inquirer = require('inquirer');
+const commander = require('commander');
+const pkg = require('./package.json');
 const questions = require('./questions');
 const { createFolderIfNeeded } = require('./utils');
 const fileWriter = require('./fileWriter');
 
-inquirer.prompt(questions).then(function(answers) {
+commander
+  .version(pkg.version)
+  .usage('feature-path')
+  .parse(process.argv);
+
+const predefindPath = commander.args.length && commander.args[0];
+
+inquirer.prompt(predefindPath ? questions.slice(1) : questions).then(function(answers) {
+  if (predefindPath) answers.path = predefindPath;
   const name = answers.path.match(/([^\/]*)\/*$/)[1];
 
   createFolderIfNeeded(answers.path);
