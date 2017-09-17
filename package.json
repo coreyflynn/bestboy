@@ -1,8 +1,11 @@
 {
-  "name": "react-feature",
+  "name": "shift-feature",
   "version": "1.0.0",
   "description": "Template generator for React features",
   "main": "index.js",
+  "bin": {
+    "shift-feature": "./index.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,5 +18,11 @@
     "commitizen": {
       "path": "./node_modules/cz-emoji"
     }
+  },
+  "dependencies": {
+    "chalk": "^2.1.0",
+    "handlebars": "^4.0.10",
+    "inquirer": "^3.2.3",
+    "mkdirp": "^0.5.1"
   }
 }
