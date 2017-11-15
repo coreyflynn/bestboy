@@ -108,8 +108,6 @@ function generateActionTests(actionsPath, testDir) {
       true,
     );
   });
-
-  console.log(chalk.green(`wrote ${actionsPath}`));
 }
 
 module.exports = generateActionTests;

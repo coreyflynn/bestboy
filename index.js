@@ -22,15 +22,17 @@ inquirer.prompt(predefindPath ? questions.slice(1) : questions).then(function(an
 
   createFolderIfNeeded(answers.path);
 
-  fileWriter(
-    answers.path,
-    'index.js',
-    path.join(__dirname, 'templates/index.js'),
-    {
-      type: answers.parts.includes('Container') ? 'container' : 'component',
-    },
-    true,
-  );
+  if (answers.parts.includes('Component') || answers.parts.includes('Container')) {
+    fileWriter(
+      answers.path,
+      'index.js',
+      path.join(__dirname, 'templates/index.js'),
+      {
+        type: answers.parts.includes('Container') ? 'container' : 'component',
+      },
+      true,
+    );
+  }
 
   if (answers.parts.includes('Container')) {
     fileWriter(answers.path, 'container.js', path.join(__dirname, 'templates/container.js'));
