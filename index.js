@@ -1,10 +1,11 @@
 #!/usr/bin/env node
-
+const fs = require('fs');
 const inquirer = require('inquirer');
 const commander = require('commander');
+const path = require('path');
 const pkg = require('./package.json');
 const questions = require('./questions');
-const { createFolderIfNeeded } = require('./utils');
+const { createFolderIfNeeded, createPropVariations } = require('./utils');
 const fileWriter = require('./fileWriter');
 
 commander
@@ -23,7 +24,7 @@ inquirer.prompt(predefindPath ? questions.slice(1) : questions).then(function(an
   fileWriter(
     answers.path,
     'index.js',
-    './templates/index.js',
+    path.join(__dirname, 'templates/index.js'),
     {
       type: answers.parts.includes('Container') ? 'container' : 'component',
     },
@@ -31,22 +32,68 @@ inquirer.prompt(predefindPath ? questions.slice(1) : questions).then(function(an
   );
 
   if (answers.parts.includes('Container')) {
-    fileWriter(answers.path, 'container.js', './templates/container.js');
+    fileWriter(answers.path, 'container.js', path.join(__dirname, 'templates/container.js'));
   }
 
   if (answers.parts.includes('Component')) {
-    fileWriter(answers.path, 'component.jsx', './templates/component.jsx', { name });
+    fileWriter(answers.path, 'component.jsx', path.join(__dirname, 'templates/component.jsx'), {
+      name,
+    });
   }
 
   if (answers.parts.includes('Actions')) {
-    fileWriter(answers.path, 'actions.js', './templates/actions.js', { name: name.toLowerCase() });
+    fileWriter(answers.path, 'actions.js', path.join(__dirname, 'templates/actions.js'), {
+      name: name.toLowerCase(),
+    });
   }
 
   if (answers.parts.includes('Reducer')) {
-    fileWriter(answers.path, 'reducer.js', './templates/reducer.js', { name: name.toLowerCase() });
+    fileWriter(answers.path, 'reducer.js', path.join(__dirname, 'templates/reducer.js'), {
+      name: name.toLowerCase(),
+    });
   }
 
   if (answers.parts.includes('Saga')) {
-    fileWriter(answers.path, 'saga.js', './templates/saga.js', { name: name.toLowerCase() });
+    fileWriter(answers.path, 'saga.js', path.join(__dirname, 'templates/saga.js'), {
+      name: name.toLowerCase(),
+    });
+  }
+
+  if (answers.parts.includes('Tests')) {
+    const componentPath = path.join(answers.path, 'component.jsx');
+
+    if (fs.existsSync(componentPath)) {
+      fileWriter(
+        answers.path,
+        'test.js',
+        path.join(__dirname, 'templates/testImports.js'),
+        {},
+        true,
+      );
+
+      fileWriter(
+        answers.path,
+        'test.js',
+        path.join(__dirname, 'templates/test.js'),
+        {
+          describe: `${name} with required props`,
+          props: JSON.stringify(createPropVariations(componentPath)[0]),
+        },
+        true,
+        true,
+      );
+
+      fileWriter(
+        answers.path,
+        'test.js',
+        path.join(__dirname, 'templates/test.js'),
+        {
+          describe: `${name} with required and optional props`,
+          props: JSON.stringify(createPropVariations(componentPath)[1]),
+        },
+        true,
+        true,
+      );
+    }
   }
 });

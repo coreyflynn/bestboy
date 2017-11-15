@@ -30,6 +30,9 @@ module.exports = [
       {
         name: 'Saga',
       },
+      {
+        name: 'Tests',
+      },
     ],
     validate: function(answer) {
       if (answer.length < 1) {

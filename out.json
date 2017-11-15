@@ -1,0 +1,20 @@
+{
+  "name": "props",
+  "value": [
+    {
+      "name": "projects",
+      "value": "Array",
+      "optional": false
+    },
+    {
+      "name": "rowHeight",
+      "value": "Number",
+      "optional": false
+    },
+    {
+      "name": "theme",
+      "value": "Generic",
+      "optional": false
+    }
+  ]
+}
