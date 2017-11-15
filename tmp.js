@@ -66,9 +66,6 @@ function getTestDataFromActionFile(target) {
 
   const tests = [];
 
-  console.log(targetString);
-  console.log(ast);
-
   estraverse.traverse(ast, {
     enter(node, parent) {
       if (node.type === 'ExportNamedDeclaration') {
