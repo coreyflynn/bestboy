@@ -1,7 +1,7 @@
 {
-  "name": "shift-feature",
+  "name": "bestboy",
   "version": "1.0.0",
-  "description": "Template generator for React features",
+  "description": "A React Dev's Assistant",
   "main": "index.js",
   "bin": {
     "shift-feature": "./index.js"
