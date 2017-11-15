@@ -18,5 +18,5 @@ bestboy path/to/feature
 Once given a path, bestboy will create a folder for the feature if needed and then prompt you
 for which parts of the feature you need.
 
-![Usage](/usage.gif)
+![](/usage.gif)
 
