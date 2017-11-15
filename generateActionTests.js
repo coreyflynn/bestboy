@@ -91,7 +91,7 @@ function generateActionTests(actionsPath, testDir) {
 
   fileWriter(
     testDir,
-    'actionTests.js',
+    'actions.test.js',
     path.join(__dirname, 'templates/actionTestImport.js'),
     { actions: tests.map(test => test.import).join(',') },
     true,
@@ -101,7 +101,7 @@ function generateActionTests(actionsPath, testDir) {
   tests.forEach(test => {
     fileWriter(
       testDir,
-      'actionTests.js',
+      'actions.test.js',
       path.join(__dirname, 'templates/actionTests.js'),
       test,
       true,

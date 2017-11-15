@@ -68,7 +68,7 @@ inquirer.prompt(predefindPath ? questions.slice(1) : questions).then(function(an
     if (fs.existsSync(componentPath)) {
       fileWriter(
         testDir,
-        'componentTests.js',
+        'component.test.js',
         path.join(__dirname, 'templates/testImports.js'),
         {},
         true,
@@ -76,7 +76,7 @@ inquirer.prompt(predefindPath ? questions.slice(1) : questions).then(function(an
 
       fileWriter(
         testDir,
-        'componentTests.js',
+        'component.test.js',
         path.join(__dirname, 'templates/test.js'),
         {
           describe: `${name} with required props`,
@@ -88,7 +88,7 @@ inquirer.prompt(predefindPath ? questions.slice(1) : questions).then(function(an
 
       fileWriter(
         testDir,
-        'componentTests.js',
+        'component.test.js',
         path.join(__dirname, 'templates/test.js'),
         {
           describe: `${name} with required and optional props`,
