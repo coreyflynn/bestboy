@@ -31,7 +31,10 @@ module.exports = [
         name: 'Saga',
       },
       {
-        name: 'Tests',
+        name: 'Component Tests',
+      },
+      {
+        name: 'Action Tests',
       },
     ],
     validate: function(answer) {

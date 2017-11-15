@@ -4,7 +4,7 @@
   "description": "A React Dev's Assistant",
   "main": "index.js",
   "bin": {
-    "shift-feature": "./index.js"
+    "bestboy": "./index.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

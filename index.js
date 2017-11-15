@@ -7,6 +7,7 @@ const pkg = require('./package.json');
 const questions = require('./questions');
 const { createFolderIfNeeded, createPropVariations } = require('./utils');
 const fileWriter = require('./fileWriter');
+const generateActionTests = require('./generateActionTests');
 
 commander
   .version(pkg.version)
@@ -59,21 +60,23 @@ inquirer.prompt(predefindPath ? questions.slice(1) : questions).then(function(an
     });
   }
 
-  if (answers.parts.includes('Tests')) {
+  if (answers.parts.includes('Component Tests')) {
     const componentPath = path.join(answers.path, 'component.jsx');
+    const testDir = path.join(answers.path, '__tests__');
+    createFolderIfNeeded(testDir);
 
     if (fs.existsSync(componentPath)) {
       fileWriter(
-        answers.path,
-        'test.js',
+        testDir,
+        'componentTests.js',
         path.join(__dirname, 'templates/testImports.js'),
         {},
         true,
       );
 
       fileWriter(
-        answers.path,
-        'test.js',
+        testDir,
+        'componentTests.js',
         path.join(__dirname, 'templates/test.js'),
         {
           describe: `${name} with required props`,
@@ -84,8 +87,8 @@ inquirer.prompt(predefindPath ? questions.slice(1) : questions).then(function(an
       );
 
       fileWriter(
-        answers.path,
-        'test.js',
+        testDir,
+        'componentTests.js',
         path.join(__dirname, 'templates/test.js'),
         {
           describe: `${name} with required and optional props`,
@@ -94,6 +97,15 @@ inquirer.prompt(predefindPath ? questions.slice(1) : questions).then(function(an
         true,
         true,
       );
+    }
+  }
+
+  if (answers.parts.includes('Action Tests')) {
+    const actionsPath = path.join(answers.path, 'actions.js');
+    const testDir = path.join(answers.path, '__tests__');
+    createFolderIfNeeded(testDir);
+    if (fs.existsSync(actionsPath)) {
+      generateActionTests(actionsPath, testDir);
     }
   }
 });

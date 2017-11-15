@@ -6,6 +6,7 @@ const estraverse = require('estraverse-fb');
 const faker = require('faker');
 const fs = require('fs');
 const path = require('path');
+const chalk = require('chalk');
 const fileWriter = require('./fileWriter');
 
 function getImport(node) {
@@ -85,26 +86,30 @@ function getTestDataFromActionFile(target) {
   return tests;
 }
 
-commander.parse(process.argv);
+function generateActionTests(actionsPath, testDir) {
+  tests = getTestDataFromActionFile(actionsPath);
 
-tests = getTestDataFromActionFile(commander.args[0]);
-
-fileWriter(
-  __dirname,
-  'actionTests.js',
-  path.join(__dirname, 'templates/actionTestImport.js'),
-  { actions: tests.map(test => test.import).join(',') },
-  true,
-  true,
-);
-
-tests.forEach(test => {
   fileWriter(
-    __dirname,
+    testDir,
     'actionTests.js',
-    path.join(__dirname, 'templates/actionTests.js'),
-    test,
+    path.join(__dirname, 'templates/actionTestImport.js'),
+    { actions: tests.map(test => test.import).join(',') },
     true,
-    true,
+    false,
   );
-});
+
+  tests.forEach(test => {
+    fileWriter(
+      testDir,
+      'actionTests.js',
+      path.join(__dirname, 'templates/actionTests.js'),
+      test,
+      true,
+      true,
+    );
+  });
+
+  console.log(chalk.green(`wrote ${actionsPath}`));
+}
+
+module.exports = generateActionTests;
