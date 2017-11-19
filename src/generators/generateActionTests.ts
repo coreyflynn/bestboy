@@ -85,8 +85,7 @@ function getExampleInitArguments(node: Node, argumentNumber: number): ExampleIni
         return { input: stringPayload, output: stringPayload, equalityCheck: '.toEqual' };
 
       default:
-        console.log('unknown payload argument');
-        break;
+        return;
     }
   }
 }
@@ -147,7 +146,6 @@ export default function generateActionTests(featurePath: string): FileWriterOutp
       );
 
       tests.forEach(test => {
-        console.log(test);
         fileWriter(
           testDir,
           'actions.test.js',

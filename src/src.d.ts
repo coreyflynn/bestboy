@@ -1,6 +1,8 @@
 declare module 'recast'
 declare module 'flow-parser'
 declare module 'vorpal'
+declare module 'cosmiconfig'
+
 declare interface FileWriterOutput {
   message: string;
   color: string;
@@ -13,6 +15,8 @@ interface VorpalArgs {
   featurePath: string;
   dir: string;
   type: string;
+  key: string;
+  value: any;
 }
 
 declare interface VorpalAnswers {
@@ -31,6 +35,10 @@ declare interface Vorpal {
   };
   log(s:string): void;
   show(): Vorpal;
+  config: {
+    [key: string]: any
+  };
+  configPath: string;
 }
 
 declare type BaseGeneratorFunction = (featurePath: string) => FileWriterOutput
