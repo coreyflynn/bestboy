@@ -1,20 +1,13 @@
-module.exports = [
-  {
-    type: 'input',
-    name: 'path',
-    message: 'Where should I put your feature?',
-    validate: function(answer) {
-      if (answer.length < 1) {
-        return 'I need someplace to put the feature, please give me a path';
-      }
-      return true;
-    },
-  },
-  {
+import * as chalk from 'chalk';
+export default function featurePrompt() {
+  return {
     type: 'checkbox',
     message: 'What parts of the feature do you need?',
     name: 'parts',
     choices: [
+      {
+        name: 'All',
+      },
       {
         name: 'Component',
       },
@@ -37,11 +30,11 @@ module.exports = [
         name: 'Action Tests',
       },
     ],
-    validate: function(answer) {
+    validate(answer: string[]) {
       if (answer.length < 1) {
-        return 'You must choose at one.';
+        return chalk.red('You must choose at one.');
       }
       return true;
     },
-  },
-];
+  };
+}
