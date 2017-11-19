@@ -4,7 +4,7 @@ import { setBestBoyPrompt } from '../utils';
 
 export default function command(vorpal: Vorpal) {
   return vorpal
-    .command('cd [dir]')
+    .command('cd [dir]', 'Change directory')
     .autocomplete(fsAutocomplete())
     .action(async (args, callback) => {
       const { dir } = args;

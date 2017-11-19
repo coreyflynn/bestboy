@@ -11,7 +11,7 @@ import generateComponentTests from '../generators/generateComponentTests';
 
 export default function command(vorpal: Vorpal) {
   return vorpal
-    .command('feature [featurePath]')
+    .command('feature [featurePath]', 'Interactively generate part or all of a feature')
     .autocomplete(fsAutocomplete())
     .action(async function(args, callback) {
       const featurePath = await getFeaturePath(this, args, 'feature');

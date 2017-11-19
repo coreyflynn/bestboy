@@ -4,7 +4,7 @@ import generateReducer from '../generators/generateReducer';
 
 export default function command(vorpal: Vorpal) {
   return vorpal
-    .command('reducer [featurePath]')
+    .command('reducer [featurePath]', 'Generate a reducer')
     .autocomplete(fsAutocomplete())
     .action(async function(args, callback) {
       await applyGenerator(vorpal, args, 'reducer', generateReducer, this);

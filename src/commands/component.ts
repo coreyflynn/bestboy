@@ -4,7 +4,7 @@ import generateComponent from '../generators/generateComponent';
 
 export default function command(vorpal: Vorpal) {
   return vorpal
-    .command('component [featurePath]')
+    .command('component [featurePath]', 'Generate a component')
     .autocomplete(fsAutocomplete())
     .action(async function(args, callback) {
       await applyGenerator(vorpal, args, 'component', generateComponent, this);

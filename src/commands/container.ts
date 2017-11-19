@@ -4,7 +4,7 @@ import generateContainer from '../generators/generateContainer';
 
 export default function command(vorpal: Vorpal) {
   return vorpal
-    .command('container [featurePath]')
+    .command('container [featurePath]', 'Generate a container')
     .autocomplete(fsAutocomplete())
     .action(async function(args, callback) {
       const featurePath = await getFeaturePath(this, args, 'container');

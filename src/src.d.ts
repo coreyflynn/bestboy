@@ -21,7 +21,7 @@ declare interface VorpalAnswers {
 }
 
 declare interface Vorpal {
-  command(s: string): Vorpal;
+  command(s: string, desc?: string): Vorpal;
   autocomplete(f: (args?: any) => any): Vorpal;
   action(f: (args: VorpalArgs, callback: (args?: any) => any) => Promise<void>): Vorpal;
   prompt(a: any): Promise<VorpalAnswers>;
