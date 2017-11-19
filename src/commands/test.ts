@@ -13,7 +13,7 @@ export default function command(vorpal: Vorpal) {
         await applyGenerator(vorpal, args, 'component', generateComponentTests, this);
       }
       if (type === 'actions') {
-        await applyGenerator(vorpal, args, 'component', generateActionTests, this);
+        await applyGenerator(vorpal, args, 'actions', generateActionTests, this);
       }
     });
 }

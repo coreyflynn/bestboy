@@ -4,7 +4,8 @@
   "description": "A React Dev's Assistant",
   "main": "lib/index.js",
   "files": [
-    "lib"
+    "lib",
+    "templates"
   ],
   "bin": {
     "bestboy": "lib/index.js"
