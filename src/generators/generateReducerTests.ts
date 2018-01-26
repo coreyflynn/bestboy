@@ -1,12 +1,14 @@
 import * as fs from 'fs';
 import * as path from 'path';
 import fileWriter from '../fileWriter';
+import { createFolderIfNeeded } from '../utils';
 import { getTestDataFromActionFile } from '../testUtils';
 
 export default function generateActionTests(featurePath: string): FileWriterOutput {
   const testDir = path.join(featurePath, '__tests__');
   const actionsPath = path.join(featurePath, 'actions.js');
   const reducerPath = path.join(featurePath, 'reducer.js');
+  createFolderIfNeeded(testDir);
 
   if (!fs.existsSync(reducerPath)) {
     return { message: 'I could not find a reducer to test!', color: 'red' };
