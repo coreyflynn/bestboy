@@ -6,8 +6,10 @@ import fileWriter from '../fileWriter';
 export default function generateComponentTests(
   featurePath: string,
   name: string,
+  config: Config,
 ): FileWriterOutput {
-  const componentPath = path.join(featurePath, 'component.jsx');
+  const fileExtension = config.fileExtensions.component;
+  const componentPath = path.join(featurePath, `component.${fileExtension}`);
   const testDir = path.join(featurePath, '__tests__');
   createFolderIfNeeded(testDir);
 

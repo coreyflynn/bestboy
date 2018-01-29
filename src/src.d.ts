@@ -24,6 +24,13 @@ declare interface VorpalAnswers {
   parts?: string[];
 }
 
+declare interface Config {
+  [key: string]: any;
+  fileExtensions: {
+    component: string;
+  }
+}
+
 declare interface Vorpal {
   command(s: string, desc?: string): Vorpal;
   autocomplete(f: (args?: any) => any): Vorpal;
@@ -35,11 +42,13 @@ declare interface Vorpal {
   };
   log(s:string): void;
   show(): Vorpal;
-  config: {
-    [key: string]: any
-  };
+  config: Config;
   configPath: string;
 }
 
 declare type BaseGeneratorFunction = (featurePath: string) => FileWriterOutput
-declare type NameGeneratorFunction = (featurePath: string, name: string) => FileWriterOutput
+declare type NameGeneratorFunction = (
+  featurePath: string,
+  name: string,
+  config?: Config
+) => FileWriterOutput

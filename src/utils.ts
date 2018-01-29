@@ -11,6 +11,7 @@ import * as faker from 'faker';
 import * as chalk from 'chalk';
 import * as cosmiconfig from 'cosmiconfig';
 import * as objectPath from 'object-path';
+import defaultConfig from './defaultConfig';
 import pathPrompt from './prompts/pathPrompt';
 
 interface BestBoyNode {
@@ -160,7 +161,7 @@ export function setBestBoyPrompt(vorpal: Vorpal): Vorpal {
 
 export function bootstrap(vorpal: Vorpal): Vorpal {
   const { config, filepath } = cosmiconfig('bestboy', { sync: true }).load(process.cwd()) || {
-    config: {},
+    config: defaultConfig,
     filepath: path.join(os.homedir(), '.bestboyrc'),
   };
   vorpal.config = config;
@@ -214,7 +215,7 @@ export async function applyGenerator(
   const match = featurePath.match(/([^\/]*)\/*$/);
   if (match) {
     const name = match[1];
-    const { message, color } = generator(featurePath, name);
+    const { message, color } = generator(featurePath, name, vorpal.config);
     vorpal.log(vorpal.chalk[color](message));
   }
 }
