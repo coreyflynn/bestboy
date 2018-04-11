@@ -28,7 +28,10 @@ declare interface Config {
   [key: string]: any;
   fileExtensions: {
     component: string;
-  }
+  },
+  equalityChecks: {
+    actionTests: '.toEqual',
+  },
 }
 
 declare interface Vorpal {

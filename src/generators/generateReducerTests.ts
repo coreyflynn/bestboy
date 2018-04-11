@@ -4,7 +4,11 @@ import fileWriter from '../fileWriter';
 import { createFolderIfNeeded } from '../utils';
 import { getTestDataFromActionFile } from '../testUtils';
 
-export default function generateActionTests(featurePath: string): FileWriterOutput {
+export default function generateReducerTests(
+  featurePath: string,
+  _: string,
+  config: Config,
+): FileWriterOutput {
   const testDir = path.join(featurePath, '__tests__');
   const actionsPath = path.join(featurePath, 'actions.js');
   const reducerPath = path.join(featurePath, 'reducer.js');
@@ -16,7 +20,7 @@ export default function generateActionTests(featurePath: string): FileWriterOutp
 
   if (fs.existsSync(actionsPath)) {
     try {
-      const tests = getTestDataFromActionFile(actionsPath);
+      const tests = getTestDataFromActionFile(actionsPath, config);
 
       fileWriter(
         testDir,

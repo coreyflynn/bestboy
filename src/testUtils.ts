@@ -6,46 +6,46 @@ import * as faker from 'faker';
 import * as fs from 'fs';
 
 interface Property {
-  name: string;
+  name: string,
   key: {
     name: string,
-  };
+  },
 }
 
 interface Argument {
-  value: any;
+  value: any,
   body: {
     type: string,
     property: Property,
     properties: Property[],
-  };
+  },
 }
 
 interface Declaration {
   id: {
     name: string,
-  };
+  },
   init: {
     arguments: Argument[],
     callee: {
       name: string,
     },
-  };
+  },
 }
 
 interface Node {
   declaration: {
     declarations: Declaration[],
-  };
+  },
 }
 
 type ExampleInitArgs = { input: string, output: string, equalityCheck: string } | undefined;
 
 interface Test {
-  import: string;
-  type: string;
-  payload: ExampleInitArgs;
-  meta: ExampleInitArgs;
+  import: string,
+  type: string,
+  payload: ExampleInitArgs,
+  meta: ExampleInitArgs,
 }
 
 function getImport(node: Node) {
@@ -56,7 +56,11 @@ function getType(node: Node): string {
   return node.declaration.declarations[0].init.arguments[0].value;
 }
 
-function getExampleInitArguments(node: Node, argumentNumber: number): ExampleInitArgs {
+function getExampleInitArguments(
+  node: Node,
+  argumentNumber: number,
+  config: Config,
+): ExampleInitArgs {
   if (node.declaration.declarations[0].init.arguments[argumentNumber]) {
     const body = node.declaration.declarations[0].init.arguments[argumentNumber].body;
     switch (body.type) {
@@ -65,14 +69,14 @@ function getExampleInitArguments(node: Node, argumentNumber: number): ExampleIni
         return {
           input: `'${indetifierValue}'`,
           output: `'${indetifierValue}'`,
-          equalityCheck: '.toBe',
+          equalityCheck: config.equalityChecks.actionTests,
         };
       case 'MemberExpression':
         const memberValue = faker.random.word();
         return {
           input: JSON.stringify({ [body.property.name]: memberValue }),
           output: `'${memberValue}'`,
-          equalityCheck: '.toBe',
+          equalityCheck: config.equalityChecks.actionTests,
         };
       case 'ObjectExpression':
         const payload: { [key: string]: string } = {};
@@ -80,7 +84,11 @@ function getExampleInitArguments(node: Node, argumentNumber: number): ExampleIni
           payload[property.key.name] = faker.random.word();
         });
         const stringPayload = JSON.stringify(payload);
-        return { input: stringPayload, output: stringPayload, equalityCheck: '.toEqual' };
+        return {
+          input: stringPayload,
+          output: stringPayload,
+          equalityCheck: config.equalityChecks.actionTests,
+        };
 
       default:
         return;
@@ -88,15 +96,15 @@ function getExampleInitArguments(node: Node, argumentNumber: number): ExampleIni
   }
 }
 
-function getPayload(node: Node) {
-  return getExampleInitArguments(node, 1);
+function getPayload(node: Node, config: Config) {
+  return getExampleInitArguments(node, 1, config);
 }
 
-function getMeta(node: Node) {
-  return getExampleInitArguments(node, 2);
+function getMeta(node: Node, config: Config) {
+  return getExampleInitArguments(node, 2, config);
 }
 
-export function getTestDataFromActionFile(target: string) {
+export function getTestDataFromActionFile(target: string, config: Config) {
   const targetString = fs.readFileSync(target).toString();
   const ast = recast.parse(targetString, {
     parser: flow,
@@ -114,8 +122,8 @@ export function getTestDataFromActionFile(target: string) {
           tests.push({
             import: getImport(node),
             type: getType(node),
-            payload: getPayload(node),
-            meta: getMeta(node),
+            payload: getPayload(node, config),
+            meta: getMeta(node, config),
           });
         }
       }
