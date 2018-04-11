@@ -91,7 +91,7 @@ function nodesToRandomProps(nodes: BestBoyNode[] | string, excludeOptionals = tr
         props[name] = nodesToRandomProps(value);
       }
       if (value instanceof String) {
-        props[name] = generateFakeValue(value);
+        props[name] = generateFakeValue(value as string);
       }
     });
   }
