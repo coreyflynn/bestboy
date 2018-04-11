@@ -7,9 +7,9 @@
     "lib",
     "templates"
   ],
-  "repository" : {
-    "type" : "git",
-    "url" : "https://github.com/coreyflynn/bestboy.git"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/coreyflynn/bestboy.git"
   },
   "bin": {
     "bestboy": "lib/index.js"
