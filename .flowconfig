@@ -1,0 +1,19 @@
+[ignore]
+<PROJECT_ROOT>/flow-typed/.*
+<PROJECT_ROOT>/node_modules/.*
+<PROJECT_ROOT>/dist/.*
+<PROJECT_ROOT>/fonts/.*
+<PROJECT_ROOT>/scripts/.*
+<PROJECT_ROOT>/static/.*
+
+[libs]
+flow-typed
+types
+
+[options]
+esproposal.export_star_as=ignore
+esproposal.decorators=ignore
+module.name_mapper='^src\/\(.*\)$' -> '<PROJECT_ROOT>/src/\1'
+module.file_ext=.js
+module.file_ext=.jsx
+module.file_ext=.scss

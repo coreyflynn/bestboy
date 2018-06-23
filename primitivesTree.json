@@ -1,0 +1,6861 @@
+{
+  "express$RouterOptions": {
+    "type": "DeclareTypeAlias",
+    "name": "express$RouterOptions",
+    "value": [
+      {
+        "optional": true,
+        "type": "ObjectTypeProperty",
+        "name": "caseSensitive",
+        "value": "Boolean"
+      },
+      {
+        "optional": true,
+        "type": "ObjectTypeProperty",
+        "name": "mergeParams",
+        "value": "Boolean"
+      },
+      {
+        "optional": true,
+        "type": "ObjectTypeProperty",
+        "name": "strict",
+        "value": "Boolean"
+      }
+    ]
+  },
+  "express$RequestParams": {
+    "type": "DeclareTypeAlias",
+    "name": "express$RequestParams",
+    "value": []
+  },
+  "express$CookieOptions": {
+    "type": "DeclareTypeAlias",
+    "name": "express$CookieOptions",
+    "value": [
+      {
+        "optional": true,
+        "type": "ObjectTypeProperty",
+        "name": "domain",
+        "value": "String"
+      },
+      {
+        "optional": true,
+        "type": "ObjectTypeProperty",
+        "name": "encode",
+        "value": "Function"
+      },
+      {
+        "optional": true,
+        "type": "ObjectTypeProperty",
+        "name": "expires",
+        "value": "Date"
+      },
+      {
+        "optional": true,
+        "type": "ObjectTypeProperty",
+        "name": "httpOnly",
+        "value": "Boolean"
+      },
+      {
+        "optional": true,
+        "type": "ObjectTypeProperty",
+        "name": "maxAge",
+        "value": "Number"
+      },
+      {
+        "optional": true,
+        "type": "ObjectTypeProperty",
+        "name": "path",
+        "value": "String"
+      },
+      {
+        "optional": true,
+        "type": "ObjectTypeProperty",
+        "name": "secure",
+        "value": "Boolean"
+      },
+      {
+        "optional": true,
+        "type": "ObjectTypeProperty",
+        "name": "signed",
+        "value": "Boolean"
+      }
+    ]
+  },
+  "express$Path": {
+    "type": "DeclareTypeAlias",
+    "name": "express$Path",
+    "value": "Union"
+  },
+  "express$RenderCallback": {
+    "type": "DeclareTypeAlias",
+    "name": "express$RenderCallback",
+    "value": "Function"
+  },
+  "express$SendFileOptions": {
+    "type": "DeclareTypeAlias",
+    "name": "express$SendFileOptions",
+    "value": [
+      {
+        "optional": true,
+        "type": "ObjectTypeProperty",
+        "name": "maxAge",
+        "value": "Number"
+      },
+      {
+        "optional": true,
+        "type": "ObjectTypeProperty",
+        "name": "root",
+        "value": "String"
+      },
+      {
+        "optional": true,
+        "type": "ObjectTypeProperty",
+        "name": "lastModified",
+        "value": "Boolean"
+      },
+      {
+        "optional": true,
+        "type": "ObjectTypeProperty",
+        "name": "headers",
+        "value": []
+      },
+      {
+        "optional": true,
+        "type": "ObjectTypeProperty",
+        "name": "dotfiles",
+        "value": "StringLiteral"
+      }
+    ]
+  },
+  "express$NextFunction": {
+    "type": "DeclareTypeAlias",
+    "name": "express$NextFunction",
+    "value": "Function"
+  },
+  "express$Middleware": {
+    "type": "DeclareTypeAlias",
+    "name": "express$Middleware",
+    "value": "Union"
+  },
+  "JsonOptions": {
+    "type": "DeclareTypeAlias",
+    "name": "JsonOptions",
+    "value": [
+      {
+        "optional": true,
+        "type": "ObjectTypeProperty",
+        "name": "inflate",
+        "value": "Boolean"
+      },
+      {
+        "optional": true,
+        "type": "ObjectTypeProperty",
+        "name": "limit",
+        "value": "String"
+      },
+      {
+        "optional": true,
+        "type": "ObjectTypeProperty",
+        "name": "reviver",
+        "value": "Function"
+      },
+      {
+        "optional": true,
+        "type": "ObjectTypeProperty",
+        "name": "strict",
+        "value": "Boolean"
+      },
+      {
+        "optional": true,
+        "type": "ObjectTypeProperty",
+        "name": "type",
+        "value": "String"
+      },
+      {
+        "optional": true,
+        "type": "ObjectTypeProperty",
+        "name": "verify",
+        "value": "Function"
+      }
+    ]
+  },
+  "express$UrlEncodedOptions": {
+    "type": "DeclareTypeAlias",
+    "name": "express$UrlEncodedOptions",
+    "value": [
+      {
+        "optional": true,
+        "type": "ObjectTypeProperty",
+        "name": "extended",
+        "value": "Boolean"
+      },
+      {
+        "optional": true,
+        "type": "ObjectTypeProperty",
+        "name": "inflate",
+        "value": "Boolean"
+      },
+      {
+        "optional": true,
+        "type": "ObjectTypeProperty",
+        "name": "limit",
+        "value": "String"
+      },
+      {
+        "optional": true,
+        "type": "ObjectTypeProperty",
+        "name": "parameterLimit",
+        "value": "Number"
+      },
+      {
+        "optional": true,
+        "type": "ObjectTypeProperty",
+        "name": "type",
+        "value": "String"
+      },
+      {
+        "optional": true,
+        "type": "ObjectTypeProperty",
+        "name": "verify",
+        "value": "Function"
+      }
+    ]
+  },
+  "HistoryOpts": {
+    "type": "DeclareTypeAlias",
+    "name": "HistoryOpts",
+    "value": [
+      {
+        "optional": true,
+        "type": "ObjectTypeProperty",
+        "name": "basename",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "hashType",
+        "value": "StringLiteral"
+      },
+      {
+        "optional": true,
+        "type": "ObjectTypeProperty",
+        "name": "getUserConfirmation",
+        "value": "Function"
+      }
+    ]
+  },
+  "__CurriedFunction1": {
+    "type": "DeclareTypeAlias",
+    "name": "__CurriedFunction1",
+    "value": "Function"
+  },
+  "CurriedFunction1": {
+    "type": "DeclareTypeAlias",
+    "name": "CurriedFunction1",
+    "value": "Generic"
+  },
+  "__CurriedFunction2": {
+    "type": "DeclareTypeAlias",
+    "name": "__CurriedFunction2",
+    "value": "Intersection"
+  },
+  "CurriedFunction2": {
+    "type": "DeclareTypeAlias",
+    "name": "CurriedFunction2",
+    "value": "Generic"
+  },
+  "__CurriedFunction3": {
+    "type": "DeclareTypeAlias",
+    "name": "__CurriedFunction3",
+    "value": "Intersection"
+  },
+  "CurriedFunction3": {
+    "type": "DeclareTypeAlias",
+    "name": "CurriedFunction3",
+    "value": "Generic"
+  },
+  "__CurriedFunction4": {
+    "type": "DeclareTypeAlias",
+    "name": "__CurriedFunction4",
+    "value": "Intersection"
+  },
+  "CurriedFunction4": {
+    "type": "DeclareTypeAlias",
+    "name": "CurriedFunction4",
+    "value": "Generic"
+  },
+  "__CurriedFunction5": {
+    "type": "DeclareTypeAlias",
+    "name": "__CurriedFunction5",
+    "value": "Intersection"
+  },
+  "CurriedFunction5": {
+    "type": "DeclareTypeAlias",
+    "name": "CurriedFunction5",
+    "value": "Generic"
+  },
+  "__CurriedFunction6": {
+    "type": "DeclareTypeAlias",
+    "name": "__CurriedFunction6",
+    "value": "Intersection"
+  },
+  "CurriedFunction6": {
+    "type": "DeclareTypeAlias",
+    "name": "CurriedFunction6",
+    "value": "Generic"
+  },
+  "Curry": {
+    "type": "DeclareTypeAlias",
+    "name": "Curry",
+    "value": "Intersection"
+  },
+  "UnaryFn": {
+    "type": "DeclareTypeAlias",
+    "name": "UnaryFn",
+    "value": "Function"
+  },
+  "TemplateSettings": {
+    "type": "DeclareTypeAlias",
+    "name": "TemplateSettings",
+    "value": [
+      {
+        "optional": true,
+        "type": "ObjectTypeProperty",
+        "name": "escape",
+        "value": "RegExp"
+      },
+      {
+        "optional": true,
+        "type": "ObjectTypeProperty",
+        "name": "evaluate",
+        "value": "RegExp"
+      },
+      {
+        "optional": true,
+        "type": "ObjectTypeProperty",
+        "name": "imports",
+        "value": "Object"
+      },
+      {
+        "optional": true,
+        "type": "ObjectTypeProperty",
+        "name": "interpolate",
+        "value": "RegExp"
+      },
+      {
+        "optional": true,
+        "type": "ObjectTypeProperty",
+        "name": "variable",
+        "value": "String"
+      }
+    ]
+  },
+  "TruncateOptions": {
+    "type": "DeclareTypeAlias",
+    "name": "TruncateOptions",
+    "value": [
+      {
+        "optional": true,
+        "type": "ObjectTypeProperty",
+        "name": "length",
+        "value": "Number"
+      },
+      {
+        "optional": true,
+        "type": "ObjectTypeProperty",
+        "name": "omission",
+        "value": "String"
+      },
+      {
+        "optional": true,
+        "type": "ObjectTypeProperty",
+        "name": "separator",
+        "value": "Generic"
+      }
+    ]
+  },
+  "DebounceOptions": {
+    "type": "DeclareTypeAlias",
+    "name": "DebounceOptions",
+    "value": [
+      {
+        "optional": true,
+        "type": "ObjectTypeProperty",
+        "name": "leading",
+        "value": "Boolean"
+      },
+      {
+        "optional": true,
+        "type": "ObjectTypeProperty",
+        "name": "maxWait",
+        "value": "Number"
+      },
+      {
+        "optional": true,
+        "type": "ObjectTypeProperty",
+        "name": "trailing",
+        "value": "Boolean"
+      }
+    ]
+  },
+  "ThrottleOptions": {
+    "type": "DeclareTypeAlias",
+    "name": "ThrottleOptions",
+    "value": [
+      {
+        "optional": true,
+        "type": "ObjectTypeProperty",
+        "name": "leading",
+        "value": "Boolean"
+      },
+      {
+        "optional": true,
+        "type": "ObjectTypeProperty",
+        "name": "trailing",
+        "value": "Boolean"
+      }
+    ]
+  },
+  "NestedArray": {
+    "type": "DeclareTypeAlias",
+    "name": "NestedArray",
+    "value": "Generic"
+  },
+  "matchesIterateeShorthand": {
+    "type": "DeclareTypeAlias",
+    "name": "matchesIterateeShorthand",
+    "value": "Generic"
+  },
+  "matchesPropertyIterateeShorthand": {
+    "type": "DeclareTypeAlias",
+    "name": "matchesPropertyIterateeShorthand",
+    "value": "Tuple"
+  },
+  "propertyIterateeShorthand": {
+    "type": "DeclareTypeAlias",
+    "name": "propertyIterateeShorthand",
+    "value": "String"
+  },
+  "OPredicate": {
+    "type": "DeclareTypeAlias",
+    "name": "OPredicate",
+    "value": "Union"
+  },
+  "OIterateeWithResult": {
+    "type": "DeclareTypeAlias",
+    "name": "OIterateeWithResult",
+    "value": "Union"
+  },
+  "OIteratee": {
+    "type": "DeclareTypeAlias",
+    "name": "OIteratee",
+    "value": "Generic"
+  },
+  "OFlatMapIteratee": {
+    "type": "DeclareTypeAlias",
+    "name": "OFlatMapIteratee",
+    "value": "Generic"
+  },
+  "Predicate": {
+    "type": "DeclareTypeAlias",
+    "name": "Predicate",
+    "value": "Union"
+  },
+  "_ValueOnlyIteratee": {
+    "type": "DeclareTypeAlias",
+    "name": "_ValueOnlyIteratee",
+    "value": "Function"
+  },
+  "ValueOnlyIteratee": {
+    "type": "DeclareTypeAlias",
+    "name": "ValueOnlyIteratee",
+    "value": "Union"
+  },
+  "_Iteratee": {
+    "type": "DeclareTypeAlias",
+    "name": "_Iteratee",
+    "value": "Function"
+  },
+  "Iteratee": {
+    "type": "DeclareTypeAlias",
+    "name": "Iteratee",
+    "value": "Union"
+  },
+  "FlatMapIteratee": {
+    "type": "DeclareTypeAlias",
+    "name": "FlatMapIteratee",
+    "value": "Union"
+  },
+  "Comparator": {
+    "type": "DeclareTypeAlias",
+    "name": "Comparator",
+    "value": "Function"
+  },
+  "MapIterator": {
+    "type": "DeclareTypeAlias",
+    "name": "MapIterator",
+    "value": "Union"
+  },
+  "ReadOnlyMapIterator": {
+    "type": "DeclareTypeAlias",
+    "name": "ReadOnlyMapIterator",
+    "value": "Union"
+  },
+  "OMapIterator": {
+    "type": "DeclareTypeAlias",
+    "name": "OMapIterator",
+    "value": "Union"
+  },
+  "$npm$ramda$Placeholder": {
+    "type": "DeclareTypeAlias",
+    "name": "$npm$ramda$Placeholder",
+    "value": [
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "value": "BooleanLiteral"
+      }
+    ]
+  },
+  "UnaryPromiseFn": {
+    "type": "DeclareTypeAlias",
+    "name": "UnaryPromiseFn",
+    "value": "Generic"
+  },
+  "BinaryFn": {
+    "type": "DeclareTypeAlias",
+    "name": "BinaryFn",
+    "value": "Intersection"
+  },
+  "UnarySameTypeFn": {
+    "type": "DeclareTypeAlias",
+    "name": "UnarySameTypeFn",
+    "value": "Generic"
+  },
+  "BinarySameTypeFn": {
+    "type": "DeclareTypeAlias",
+    "name": "BinarySameTypeFn",
+    "value": "Generic"
+  },
+  "NestedObject": {
+    "type": "DeclareTypeAlias",
+    "name": "NestedObject",
+    "value": []
+  },
+  "UnaryPredicateFn": {
+    "type": "DeclareTypeAlias",
+    "name": "UnaryPredicateFn",
+    "value": "Function"
+  },
+  "MapUnaryPredicateFn": {
+    "type": "DeclareTypeAlias",
+    "name": "MapUnaryPredicateFn",
+    "value": "Function"
+  },
+  "BinaryPredicateFn": {
+    "type": "DeclareTypeAlias",
+    "name": "BinaryPredicateFn",
+    "value": "Function"
+  },
+  "BinaryPredicateFn2": {
+    "type": "DeclareTypeAlias",
+    "name": "BinaryPredicateFn2",
+    "value": "Function"
+  },
+  "Partial": {
+    "type": "DeclareTypeAlias",
+    "name": "Partial",
+    "value": "Intersection"
+  },
+  "Pipe": {
+    "type": "DeclareTypeAlias",
+    "name": "Pipe",
+    "value": "Intersection"
+  },
+  "PipeP": {
+    "type": "DeclareTypeAlias",
+    "name": "PipeP",
+    "value": "Intersection"
+  },
+  "Compose": {
+    "type": "DeclareTypeAlias",
+    "name": "Compose",
+    "value": "Intersection"
+  },
+  "Filter": {
+    "type": "DeclareTypeAlias",
+    "name": "Filter",
+    "value": "Intersection"
+  },
+  "Find": {
+    "type": "DeclareTypeAlias",
+    "name": "Find",
+    "value": "Intersection"
+  },
+  "AccumIterator": {
+    "type": "DeclareTypeAlias",
+    "name": "AccumIterator",
+    "value": "Function"
+  },
+  "Reduce": {
+    "type": "DeclareTypeAlias",
+    "name": "Reduce",
+    "value": "Intersection"
+  },
+  "PropEq": {
+    "type": "DeclareTypeAlias",
+    "name": "PropEq",
+    "value": "Intersection"
+  },
+  "Lens": {
+    "type": "DeclareTypeAlias",
+    "name": "Lens",
+    "value": "Function"
+  },
+  "Merge": {
+    "type": "DeclareTypeAlias",
+    "name": "Merge",
+    "value": "Intersection"
+  },
+  "MergeWith": {
+    "type": "DeclareTypeAlias",
+    "name": "MergeWith",
+    "value": "Intersection"
+  },
+  "MergeWithKey": {
+    "type": "DeclareTypeAlias",
+    "name": "MergeWithKey",
+    "value": "Intersection"
+  },
+  "RavenPlugin": {
+    "type": "DeclareTypeAlias",
+    "name": "RavenPlugin",
+    "value": []
+  },
+  "ChildrenProps": {
+    "type": "DeclareTypeAlias",
+    "name": "ChildrenProps",
+    "value": [
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "draggedFiles",
+        "value": "Array"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "acceptedFile",
+        "value": "Array"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "rejectedFiles",
+        "value": "Array"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "isDragActive",
+        "value": "Boolean"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "isDragAccept",
+        "value": "Boolean"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "isDragReject",
+        "value": "Boolean"
+      }
+    ]
+  },
+  "DropzoneFile": {
+    "type": "DeclareTypeAlias",
+    "name": "DropzoneFile",
+    "value": "Intersection"
+  },
+  "DropzoneProps": {
+    "type": "DeclareTypeAlias",
+    "name": "DropzoneProps",
+    "value": [
+      {
+        "optional": true,
+        "type": "ObjectTypeProperty",
+        "name": "accept",
+        "value": "String"
+      },
+      {
+        "optional": true,
+        "type": "ObjectTypeProperty",
+        "name": "children",
+        "value": "Generic"
+      },
+      {
+        "optional": true,
+        "type": "ObjectTypeProperty",
+        "name": "disableClick",
+        "value": "Boolean"
+      },
+      {
+        "optional": true,
+        "type": "ObjectTypeProperty",
+        "name": "disabled",
+        "value": "Boolean"
+      },
+      {
+        "optional": true,
+        "type": "ObjectTypeProperty",
+        "name": "disablePreview",
+        "value": "Boolean"
+      },
+      {
+        "optional": true,
+        "type": "ObjectTypeProperty",
+        "name": "preventDropOnDocument",
+        "value": "Boolean"
+      },
+      {
+        "optional": true,
+        "type": "ObjectTypeProperty",
+        "name": "inputProps",
+        "value": "Object"
+      },
+      {
+        "optional": true,
+        "type": "ObjectTypeProperty",
+        "name": "multiple",
+        "value": "Boolean"
+      },
+      {
+        "optional": true,
+        "type": "ObjectTypeProperty",
+        "name": "name",
+        "value": "String"
+      },
+      {
+        "optional": true,
+        "type": "ObjectTypeProperty",
+        "name": "maxSize",
+        "value": "Number"
+      },
+      {
+        "optional": true,
+        "type": "ObjectTypeProperty",
+        "name": "minSize",
+        "value": "Number"
+      },
+      {
+        "optional": true,
+        "type": "ObjectTypeProperty",
+        "name": "className",
+        "value": "String"
+      },
+      {
+        "optional": true,
+        "type": "ObjectTypeProperty",
+        "name": "activeClassName",
+        "value": "String"
+      },
+      {
+        "optional": true,
+        "type": "ObjectTypeProperty",
+        "name": "acceptClassName",
+        "value": "String"
+      },
+      {
+        "optional": true,
+        "type": "ObjectTypeProperty",
+        "name": "rejectClassName",
+        "value": "String"
+      },
+      {
+        "optional": true,
+        "type": "ObjectTypeProperty",
+        "name": "disabledClassName",
+        "value": "String"
+      },
+      {
+        "optional": true,
+        "type": "ObjectTypeProperty",
+        "name": "style",
+        "value": "Object"
+      },
+      {
+        "optional": true,
+        "type": "ObjectTypeProperty",
+        "name": "activeStyle",
+        "value": "Object"
+      },
+      {
+        "optional": true,
+        "type": "ObjectTypeProperty",
+        "name": "acceptStyle",
+        "value": "Object"
+      },
+      {
+        "optional": true,
+        "type": "ObjectTypeProperty",
+        "name": "rejectStyle",
+        "value": "Object"
+      },
+      {
+        "optional": true,
+        "type": "ObjectTypeProperty",
+        "name": "disabledStyle",
+        "value": "Object"
+      },
+      {
+        "optional": true,
+        "type": "ObjectTypeProperty",
+        "name": "onClick",
+        "value": "Function"
+      },
+      {
+        "optional": true,
+        "type": "ObjectTypeProperty",
+        "name": "onDrop",
+        "value": "Function"
+      },
+      {
+        "optional": true,
+        "type": "ObjectTypeProperty",
+        "name": "onDropAccepted",
+        "value": "Function"
+      },
+      {
+        "optional": true,
+        "type": "ObjectTypeProperty",
+        "name": "onDropRejected",
+        "value": "Function"
+      },
+      {
+        "optional": true,
+        "type": "ObjectTypeProperty",
+        "name": "onDragStart",
+        "value": "Function"
+      },
+      {
+        "optional": true,
+        "type": "ObjectTypeProperty",
+        "name": "onDragEnter",
+        "value": "Function"
+      },
+      {
+        "optional": true,
+        "type": "ObjectTypeProperty",
+        "name": "onDragOver",
+        "value": "Function"
+      },
+      {
+        "optional": true,
+        "type": "ObjectTypeProperty",
+        "name": "onDragLeave",
+        "value": "Function"
+      },
+      {
+        "optional": true,
+        "type": "ObjectTypeProperty",
+        "name": "onFileDialogCancel",
+        "value": "Function"
+      }
+    ]
+  },
+  "TFunction": {
+    "type": "DeclareTypeAlias",
+    "name": "TFunction",
+    "value": "Function"
+  },
+  "Locales": {
+    "type": "DeclareTypeAlias",
+    "name": "Locales",
+    "value": "Union"
+  },
+  "TranslatorProps": {
+    "type": "DeclareTypeAlias",
+    "name": "TranslatorProps",
+    "value": [
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "t",
+        "value": "Function"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "i18nLoadedAt",
+        "value": "Date"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "i18n",
+        "value": "Object"
+      }
+    ]
+  },
+  "Translator": {
+    "type": "DeclareTypeAlias",
+    "name": "Translator",
+    "value": "Function"
+  },
+  "TranslateOptions": {
+    "type": "DeclareTypeAlias",
+    "name": "TranslateOptions",
+    "value": "Generic"
+  },
+  "I18nProps": {
+    "type": "DeclareTypeAlias",
+    "name": "I18nProps",
+    "value": [
+      {
+        "optional": true,
+        "type": "ObjectTypeProperty",
+        "name": "i18n",
+        "value": "Object"
+      },
+      {
+        "optional": true,
+        "type": "ObjectTypeProperty",
+        "name": "ns",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "children",
+        "value": "Function"
+      },
+      {
+        "optional": true,
+        "type": "ObjectTypeProperty",
+        "name": "initialI18nStore",
+        "value": "Object"
+      },
+      {
+        "optional": true,
+        "type": "ObjectTypeProperty",
+        "name": "initialLanguage",
+        "value": "String"
+      }
+    ]
+  },
+  "InterpolateProps": {
+    "type": "DeclareTypeAlias",
+    "name": "InterpolateProps",
+    "value": [
+      {
+        "optional": true,
+        "type": "ObjectTypeProperty",
+        "name": "className",
+        "value": "String"
+      },
+      {
+        "optional": true,
+        "type": "ObjectTypeProperty",
+        "name": "dangerouslySetInnerHTMLPartElement",
+        "value": "String"
+      },
+      {
+        "optional": true,
+        "type": "ObjectTypeProperty",
+        "name": "i18n",
+        "value": "Object"
+      },
+      {
+        "optional": true,
+        "type": "ObjectTypeProperty",
+        "name": "i18nKey",
+        "value": "String"
+      },
+      {
+        "optional": true,
+        "type": "ObjectTypeProperty",
+        "name": "options",
+        "value": "Object"
+      },
+      {
+        "optional": true,
+        "type": "ObjectTypeProperty",
+        "name": "parent",
+        "value": "String"
+      },
+      {
+        "optional": true,
+        "type": "ObjectTypeProperty",
+        "name": "style",
+        "value": "Object"
+      },
+      {
+        "optional": true,
+        "type": "ObjectTypeProperty",
+        "name": "t",
+        "value": "Function"
+      },
+      {
+        "optional": true,
+        "type": "ObjectTypeProperty",
+        "name": "useDangerouslySetInnerHTML",
+        "value": "Boolean"
+      }
+    ]
+  },
+  "TransProps": {
+    "type": "DeclareTypeAlias",
+    "name": "TransProps",
+    "value": [
+      {
+        "optional": true,
+        "type": "ObjectTypeProperty",
+        "name": "count",
+        "value": "Number"
+      },
+      {
+        "optional": true,
+        "type": "ObjectTypeProperty",
+        "name": "parent",
+        "value": "String"
+      },
+      {
+        "optional": true,
+        "type": "ObjectTypeProperty",
+        "name": "i18n",
+        "value": "Object"
+      },
+      {
+        "optional": true,
+        "type": "ObjectTypeProperty",
+        "name": "i18nKey",
+        "value": "String"
+      },
+      {
+        "optional": true,
+        "type": "ObjectTypeProperty",
+        "name": "t",
+        "value": "Function"
+      }
+    ]
+  },
+  "ProviderProps": {
+    "type": "DeclareTypeAlias",
+    "name": "ProviderProps",
+    "value": [
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "i18n",
+        "value": "Object"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "children",
+        "value": "React$Element"
+      }
+    ]
+  },
+  "NamespacesProps": {
+    "type": "DeclareTypeAlias",
+    "name": "NamespacesProps",
+    "value": [
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "components",
+        "value": "Array"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "i18n",
+        "value": [
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "loadNamespaces",
+            "value": "Function"
+          }
+        ]
+      }
+    ]
+  },
+  "LoadingProps": {
+    "type": "DeclareTypeAlias",
+    "name": "LoadingProps",
+    "value": [
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "isLoading",
+        "value": "Boolean"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "pastDelay",
+        "value": "Boolean"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "timedOut",
+        "value": "Boolean"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "error",
+        "value": "Boolean"
+      }
+    ]
+  },
+  "CommonOptions": {
+    "type": "DeclareTypeAlias",
+    "name": "CommonOptions",
+    "value": [
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "loading",
+        "value": "React$ComponentType"
+      },
+      {
+        "optional": true,
+        "type": "ObjectTypeProperty",
+        "name": "delay",
+        "value": "Number"
+      },
+      {
+        "optional": true,
+        "type": "ObjectTypeProperty",
+        "name": "timeout",
+        "value": "Number"
+      },
+      {
+        "optional": true,
+        "type": "ObjectTypeProperty",
+        "name": "modules",
+        "value": "Array"
+      },
+      {
+        "optional": true,
+        "type": "ObjectTypeProperty",
+        "name": "webpack",
+        "value": "Function"
+      }
+    ]
+  },
+  "OptionsWithoutRender": {
+    "type": "DeclareTypeAlias",
+    "name": "OptionsWithoutRender",
+    "value": [
+      {
+        "type": "ObjectTypeSpreadProperty",
+        "name": "ObjectTypeSpreadProperty",
+        "value": []
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "loader",
+        "value": "Function"
+      }
+    ]
+  },
+  "OptionsWithRender": {
+    "type": "DeclareTypeAlias",
+    "name": "OptionsWithRender",
+    "value": [
+      {
+        "type": "ObjectTypeSpreadProperty",
+        "name": "ObjectTypeSpreadProperty",
+        "value": []
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "loader",
+        "value": "Function"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "render",
+        "value": "Function"
+      }
+    ]
+  },
+  "Options": {
+    "type": "DeclareTypeAlias",
+    "name": "Options",
+    "value": "Union"
+  },
+  "MapOptions": {
+    "type": "DeclareTypeAlias",
+    "name": "MapOptions",
+    "value": [
+      {
+        "type": "ObjectTypeSpreadProperty",
+        "name": "ObjectTypeSpreadProperty",
+        "value": []
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "loader",
+        "value": []
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "render",
+        "value": "Function"
+      }
+    ]
+  },
+  "CaptureProps": {
+    "type": "DeclareTypeAlias",
+    "name": "CaptureProps",
+    "value": [
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "report",
+        "value": "Function"
+      }
+    ]
+  },
+  "MapStateToProps": {
+    "type": "DeclareTypeAlias",
+    "name": "MapStateToProps",
+    "value": "Function"
+  },
+  "MapDispatchToProps": {
+    "type": "DeclareTypeAlias",
+    "name": "MapDispatchToProps",
+    "value": "Function"
+  },
+  "MergeProps": {
+    "type": "DeclareTypeAlias",
+    "name": "MergeProps",
+    "value": "Function"
+  },
+  "ConnectOptions": {
+    "type": "DeclareTypeAlias",
+    "name": "ConnectOptions",
+    "value": [
+      {
+        "optional": true,
+        "type": "ObjectTypeProperty",
+        "name": "pure",
+        "value": "Boolean"
+      },
+      {
+        "optional": true,
+        "type": "ObjectTypeProperty",
+        "name": "withRef",
+        "value": "Boolean"
+      },
+      {
+        "optional": true,
+        "type": "ObjectTypeProperty",
+        "name": "areStatesEqual",
+        "value": "Function"
+      },
+      {
+        "optional": true,
+        "type": "ObjectTypeProperty",
+        "name": "areOwnPropsEqual",
+        "value": "Function"
+      },
+      {
+        "optional": true,
+        "type": "ObjectTypeProperty",
+        "name": "areStatePropsEqual",
+        "value": "Function"
+      },
+      {
+        "optional": true,
+        "type": "ObjectTypeProperty",
+        "name": "areMergedPropsEqual",
+        "value": "Function"
+      },
+      {
+        "optional": true,
+        "type": "ObjectTypeProperty",
+        "name": "storeKey",
+        "value": "String"
+      }
+    ]
+  },
+  "OmitDispatch": {
+    "type": "DeclareTypeAlias",
+    "name": "OmitDispatch",
+    "value": "Generic"
+  },
+  "StaticRouterContext": {
+    "type": "DeclareTypeAlias",
+    "name": "StaticRouterContext",
+    "value": [
+      {
+        "optional": true,
+        "type": "ObjectTypeProperty",
+        "name": "url",
+        "value": "String"
+      }
+    ]
+  },
+  "MatchPathOptions": {
+    "type": "DeclareTypeAlias",
+    "name": "MatchPathOptions",
+    "value": [
+      {
+        "optional": true,
+        "type": "ObjectTypeProperty",
+        "name": "path",
+        "value": "String"
+      },
+      {
+        "optional": true,
+        "type": "ObjectTypeProperty",
+        "name": "exact",
+        "value": "Boolean"
+      },
+      {
+        "optional": true,
+        "type": "ObjectTypeProperty",
+        "name": "strict",
+        "value": "Boolean"
+      },
+      {
+        "optional": true,
+        "type": "ObjectTypeProperty",
+        "name": "sensitive",
+        "value": "Boolean"
+      }
+    ]
+  },
+  "Selector": {
+    "type": "DeclareTypeAlias",
+    "name": "Selector",
+    "value": "Function"
+  },
+  "SelectorCreator": {
+    "type": "DeclareTypeAlias",
+    "name": "SelectorCreator",
+    "value": []
+  },
+  "Reselect": {
+    "type": "DeclareTypeAlias",
+    "name": "Reselect",
+    "value": [
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "createSelector",
+        "value": []
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "defaultMemoize",
+        "value": "Function"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "createSelectorCreator",
+        "value": "Function"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "createStructuredSelector",
+        "value": "Function"
+      }
+    ]
+  },
+  "AccountPreferenceName": {
+    "type": "DeclareTypeAlias",
+    "name": "AccountPreferenceName",
+    "value": "Union"
+  },
+  "AccountPreference": {
+    "type": "DeclareTypeAlias",
+    "name": "AccountPreference",
+    "value": [
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "id",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "accountId",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "name",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "value",
+        "value": "String"
+      }
+    ]
+  },
+  "AccountPreferences": {
+    "type": "DeclareTypeAlias",
+    "name": "AccountPreferences",
+    "value": "Array"
+  },
+  "Action": {
+    "type": "DeclareTypeAlias",
+    "name": "Action",
+    "value": [
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "type",
+        "value": "String"
+      },
+      {
+        "optional": true,
+        "type": "ObjectTypeProperty",
+        "name": "payload",
+        "value": "Object"
+      },
+      {
+        "optional": true,
+        "type": "ObjectTypeProperty",
+        "name": "meta",
+        "value": []
+      },
+      {
+        "optional": true,
+        "type": "ObjectTypeProperty",
+        "name": "error",
+        "value": "Boolean"
+      }
+    ]
+  },
+  "Derivative": {
+    "type": "DeclareTypeAlias",
+    "name": "Derivative",
+    "value": [
+      {
+        "optional": true,
+        "type": "ObjectTypeProperty",
+        "name": "duration",
+        "value": "Number"
+      },
+      {
+        "optional": true,
+        "type": "ObjectTypeProperty",
+        "name": "fileSize",
+        "value": "Number"
+      },
+      {
+        "optional": true,
+        "type": "ObjectTypeProperty",
+        "name": "frameRate",
+        "value": "Number"
+      },
+      {
+        "optional": true,
+        "type": "ObjectTypeProperty",
+        "name": "height",
+        "value": "Number"
+      },
+      {
+        "optional": true,
+        "type": "ObjectTypeProperty",
+        "name": "width",
+        "value": "Number"
+      },
+      {
+        "optional": true,
+        "type": "ObjectTypeProperty",
+        "name": "url",
+        "value": "String"
+      },
+      {
+        "optional": true,
+        "type": "ObjectTypeProperty",
+        "name": "strategies",
+        "value": "StrategyArray"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "type",
+        "value": "StringLiteral"
+      },
+      {
+        "optional": true,
+        "type": "ObjectTypeProperty",
+        "name": "posterFrame",
+        "value": "String"
+      }
+    ]
+  },
+  "AssetPermission": {
+    "type": "DeclareTypeAlias",
+    "name": "AssetPermission",
+    "value": "Union"
+  },
+  "ApprovalStatus": {
+    "type": "DeclareTypeAlias",
+    "name": "ApprovalStatus",
+    "value": "Union"
+  },
+  "ArchiveStatus": {
+    "type": "DeclareTypeAlias",
+    "name": "ArchiveStatus",
+    "value": "Union"
+  },
+  "AssetType": {
+    "type": "DeclareTypeAlias",
+    "name": "AssetType",
+    "value": "Union"
+  },
+  "TranscriptStatus": {
+    "type": "DeclareTypeAlias",
+    "name": "TranscriptStatus",
+    "value": "Union"
+  },
+  "SpriteCoords": {
+    "type": "DeclareTypeAlias",
+    "name": "SpriteCoords",
+    "value": [
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "x",
+        "value": "Number"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "y",
+        "value": "Number"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "w",
+        "value": "Number"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "h",
+        "value": "Number"
+      }
+    ]
+  },
+  "Sprites": {
+    "type": "DeclareTypeAlias",
+    "name": "Sprites",
+    "value": [
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "timeFetched",
+        "value": "moment$Moment"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "image",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "coords",
+        "value": "SpriteCoordsArray"
+      }
+    ]
+  },
+  "UserAction": {
+    "type": "DeclareTypeAlias",
+    "name": "UserAction",
+    "value": "Union"
+  },
+  "AssetPermissionsMap": {
+    "type": "DeclareTypeAlias",
+    "name": "AssetPermissionsMap",
+    "value": []
+  },
+  "Asset": {
+    "type": "DeclareTypeAlias",
+    "name": "Asset",
+    "value": [
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "id",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "approvalStatus",
+        "value": "Union"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "archiveStatus",
+        "value": "Union"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "averageRating",
+        "value": "Any"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "commentCount",
+        "value": "Number"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "dateCreated",
+        "value": "Number"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "dateModified",
+        "value": "Number"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "derivatives",
+        "value": "DerivativeArray"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "description",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "duration",
+        "value": "Number"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "external",
+        "value": "Boolean"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "fileName",
+        "value": "String"
+      },
+      {
+        "optional": true,
+        "type": "ObjectTypeProperty",
+        "name": "folderId",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "myRating",
+        "value": "Any"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "permissions",
+        "value": "AssetPermissionArray"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "posterFrame",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "private",
+        "value": "Boolean"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "progress",
+        "value": "Number"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "projectId",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "sprites",
+        "value": [
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "timeFetched",
+            "value": "moment$Moment"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "image",
+            "value": "String"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "coords",
+            "value": "SpriteCoordsArray"
+          }
+        ]
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "tags",
+        "value": "StringArray"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "title",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "transcriptStatus",
+        "value": "Union"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "type",
+        "value": "Union"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "uploadedBy",
+        "value": "String"
+      }
+    ]
+  },
+  "AssetQueryParams": {
+    "type": "DeclareTypeAlias",
+    "name": "AssetQueryParams",
+    "value": [
+      {
+        "optional": true,
+        "type": "ObjectTypeProperty",
+        "name": "index",
+        "value": "Number"
+      }
+    ]
+  },
+  "AssetVersion": {
+    "type": "DeclareTypeAlias",
+    "name": "AssetVersion",
+    "value": [
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "versionId",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "assetId",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "dateCreated",
+        "value": "Number"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "status",
+        "value": "StringLiteral"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "asset",
+        "value": [
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "id",
+            "value": "String"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "approvalStatus",
+            "value": "Union"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "archiveStatus",
+            "value": "Union"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "averageRating",
+            "value": "Any"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "commentCount",
+            "value": "Number"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "dateCreated",
+            "value": "Number"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "dateModified",
+            "value": "Number"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "derivatives",
+            "value": "DerivativeArray"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "description",
+            "value": "String"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "duration",
+            "value": "Number"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "external",
+            "value": "Boolean"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "fileName",
+            "value": "String"
+          },
+          {
+            "optional": true,
+            "type": "ObjectTypeProperty",
+            "name": "folderId",
+            "value": "String"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "myRating",
+            "value": "Any"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "permissions",
+            "value": "AssetPermissionArray"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "posterFrame",
+            "value": "String"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "private",
+            "value": "Boolean"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "progress",
+            "value": "Number"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "projectId",
+            "value": "String"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "sprites",
+            "value": [
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "timeFetched",
+                "value": "moment$Moment"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "image",
+                "value": "String"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "coords",
+                "value": "SpriteCoordsArray"
+              }
+            ]
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "tags",
+            "value": "StringArray"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "title",
+            "value": "String"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "transcriptStatus",
+            "value": "Union"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "type",
+            "value": "Union"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "uploadedBy",
+            "value": "String"
+          }
+        ]
+      }
+    ]
+  },
+  "AssetPlaceholder": {
+    "type": "DeclareTypeAlias",
+    "name": "AssetPlaceholder",
+    "value": [
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "localId",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "serverId",
+        "value": "NullLiteral"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "uploadProgress",
+        "value": "Number"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "encodeProgress",
+        "value": "Number"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "status",
+        "value": "StringLiteral"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "fileSize",
+        "value": "Number"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "fileName",
+        "value": "String"
+      }
+    ]
+  },
+  "Comment": {
+    "type": "DeclareTypeAlias",
+    "name": "Comment",
+    "value": [
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "id",
+        "value": "String"
+      },
+      {
+        "optional": true,
+        "type": "ObjectTypeProperty",
+        "name": "localId",
+        "value": "String"
+      },
+      {
+        "optional": true,
+        "type": "ObjectTypeProperty",
+        "name": "inResponseTo",
+        "value": "String"
+      },
+      {
+        "optional": true,
+        "type": "ObjectTypeProperty",
+        "name": "context",
+        "value": "String"
+      },
+      {
+        "optional": true,
+        "type": "ObjectTypeProperty",
+        "name": "startTimeCode",
+        "value": "Number"
+      },
+      {
+        "optional": true,
+        "type": "ObjectTypeProperty",
+        "name": "endTimeCode",
+        "value": "Number"
+      },
+      {
+        "optional": true,
+        "type": "ObjectTypeProperty",
+        "name": "dateCreated",
+        "value": "Number"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "body",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "drawings",
+        "value": "Nullable"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "user",
+        "value": "$Shape"
+      },
+      {
+        "optional": true,
+        "type": "ObjectTypeProperty",
+        "name": "done",
+        "value": "Boolean"
+      },
+      {
+        "optional": true,
+        "type": "ObjectTypeProperty",
+        "name": "responses",
+        "value": "CommentArray"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "status",
+        "value": "String"
+      }
+    ]
+  },
+  "PostCommentPayload": {
+    "type": "DeclareTypeAlias",
+    "name": "PostCommentPayload",
+    "value": [
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "quicklinkId",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "assetId",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "comment",
+        "value": "$Shape"
+      }
+    ]
+  },
+  "Drawing": {
+    "type": "DeclareTypeAlias",
+    "name": "Drawing",
+    "value": [
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "color",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "strokeWidth",
+        "value": "Number"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "length",
+        "value": "Number"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "points",
+        "value": "TupleArray"
+      }
+    ]
+  },
+  "FeedItemPreview": {
+    "type": "DeclareTypeAlias",
+    "name": "FeedItemPreview",
+    "value": [
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "commentCount",
+        "value": "Number"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "id",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "thumbnailUrl",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "title",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "type",
+        "value": "String"
+      }
+    ]
+  },
+  "Originator": {
+    "type": "DeclareTypeAlias",
+    "name": "Originator",
+    "value": [
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "company",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "firstName",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "email",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "lastName",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "id",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "lastLogin",
+        "value": "Number"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "tags",
+        "value": "StringArray"
+      }
+    ]
+  },
+  "FeedItem": {
+    "type": "DeclareTypeAlias",
+    "name": "FeedItem",
+    "value": [
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "context",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "dateCreated",
+        "value": "Number"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "dateModified",
+        "value": "Number"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "favorite",
+        "value": "Boolean"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "id",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "originator",
+        "value": [
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "company",
+            "value": "String"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "firstName",
+            "value": "String"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "email",
+            "value": "String"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "lastName",
+            "value": "String"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "id",
+            "value": "String"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "lastLogin",
+            "value": "Number"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "tags",
+            "value": "StringArray"
+          }
+        ]
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "targetObjectId",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "payload",
+        "value": [
+          {
+            "optional": true,
+            "type": "ObjectTypeProperty",
+            "name": "assetCount",
+            "value": "Number"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "authenticationType",
+            "value": "StringLiteral"
+          },
+          {
+            "optional": true,
+            "type": "ObjectTypeProperty",
+            "name": "commentCount",
+            "value": "Number"
+          },
+          {
+            "optional": true,
+            "type": "ObjectTypeProperty",
+            "name": "configuration",
+            "value": [
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "id",
+                "value": "String"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "settings",
+                "value": "ObjectArray"
+              }
+            ]
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "data",
+            "value": "FeedItemPreviewArray"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "expires",
+            "value": "String"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "hostname",
+            "value": "String"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "id",
+            "value": "String"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "message",
+            "value": "String"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "title",
+            "value": "String"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "token",
+            "value": "String"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "type",
+            "value": "StringLiteral"
+          }
+        ]
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "read",
+        "value": "Boolean"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "audience",
+        "value": "OriginatorArray"
+      }
+    ]
+  },
+  "Folder": {
+    "type": "DeclareTypeAlias",
+    "name": "Folder",
+    "value": [
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "id",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "name",
+        "value": "String"
+      },
+      {
+        "optional": true,
+        "type": "ObjectTypeProperty",
+        "name": "parentId",
+        "value": "String"
+      },
+      {
+        "optional": true,
+        "type": "ObjectTypeProperty",
+        "name": "parentNumericId",
+        "value": "Number"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "projectId",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "numericId",
+        "value": "Number"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "folderCount",
+        "value": "Number"
+      }
+    ]
+  },
+  "TrackingLevel": {
+    "type": "DeclareTypeAlias",
+    "name": "TrackingLevel",
+    "value": "Union"
+  },
+  "FeedItemLocation": {
+    "type": "DeclareTypeAlias",
+    "name": "FeedItemLocation",
+    "value": [
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "pathname",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "state",
+        "value": [
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "backPath",
+            "value": "String"
+          }
+        ]
+      }
+    ]
+  },
+  "DesktopFile": {
+    "type": "DeclareTypeAlias",
+    "name": "DesktopFile",
+    "value": [
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "path",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "webkitRelativePath",
+        "value": "String"
+      }
+    ]
+  },
+  "PlatformUtils": {
+    "type": "DeclareTypeAlias",
+    "name": "PlatformUtils",
+    "value": [
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "resize",
+        "value": "Function"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "showWindow",
+        "value": "Function"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "hideWindow",
+        "value": "Function"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "uploadAsset",
+        "value": "Function"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "initAllTracking",
+        "value": "Function"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "initTracking",
+        "value": "Function"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "initLocationTracking",
+        "value": "Function"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "initErrorTracking",
+        "value": "Function"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "addTouchBarButton",
+        "value": "Function"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "trackUser",
+        "value": "Function"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "trackEvent",
+        "value": "Function"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "handleOpenFeedItemRequests",
+        "value": "Function"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "makeOpenFeedItemRequest",
+        "value": "Function"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "getFileListFromFolderInput",
+        "value": "Function"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "reloadChildWindow",
+        "value": "Function"
+      }
+    ]
+  },
+  "PlayerApi": {
+    "type": "DeclareTypeAlias",
+    "name": "PlayerApi",
+    "value": [
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "addEventListener",
+        "value": "Function"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "getDuration",
+        "value": "Function"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "getFullscreen",
+        "value": "Function"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "getPlaying",
+        "value": "Function"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "getPosition",
+        "value": "Function"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "getSource",
+        "value": "Function"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "getSpeed",
+        "value": "Function"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "getStatus",
+        "value": "Function"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "getVersion",
+        "value": "Function"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "getVolume",
+        "value": "Function"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "pause",
+        "value": "Function"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "play",
+        "value": "Function"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "removeEventListener",
+        "value": "Function"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "setFullscreen",
+        "value": "Function"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "setPosition",
+        "value": "Function"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "setSpeed",
+        "value": "Function"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "setVolume",
+        "value": "Function"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "toggle",
+        "value": "Function"
+      }
+    ]
+  },
+  "ProjectEventName": {
+    "type": "DeclareTypeAlias",
+    "name": "ProjectEventName",
+    "value": "Union"
+  },
+  "ProjectInvitation": {
+    "type": "DeclareTypeAlias",
+    "name": "ProjectInvitation",
+    "value": [
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "accepted",
+        "value": "Boolean"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "accountId",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "created",
+        "value": "Number"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "hostname",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "id",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "invitedBy",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "invitedByName",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "projectId",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "projectName",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "recipientEmail",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "recipientIsNewUser",
+        "value": "Boolean"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "roleTemplateId",
+        "value": "String"
+      }
+    ]
+  },
+  "ProjectEntity": {
+    "type": "DeclareTypeAlias",
+    "name": "ProjectEntity",
+    "value": [
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "asset",
+        "value": [
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "id",
+            "value": "String"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "approvalStatus",
+            "value": "Union"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "archiveStatus",
+            "value": "Union"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "averageRating",
+            "value": "Any"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "commentCount",
+            "value": "Number"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "dateCreated",
+            "value": "Number"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "dateModified",
+            "value": "Number"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "derivatives",
+            "value": "DerivativeArray"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "description",
+            "value": "String"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "duration",
+            "value": "Number"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "external",
+            "value": "Boolean"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "fileName",
+            "value": "String"
+          },
+          {
+            "optional": true,
+            "type": "ObjectTypeProperty",
+            "name": "folderId",
+            "value": "String"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "myRating",
+            "value": "Any"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "permissions",
+            "value": "AssetPermissionArray"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "posterFrame",
+            "value": "String"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "private",
+            "value": "Boolean"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "progress",
+            "value": "Number"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "projectId",
+            "value": "String"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "sprites",
+            "value": [
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "timeFetched",
+                "value": "moment$Moment"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "image",
+                "value": "String"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "coords",
+                "value": "SpriteCoordsArray"
+              }
+            ]
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "tags",
+            "value": "StringArray"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "title",
+            "value": "String"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "transcriptStatus",
+            "value": "Union"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "type",
+            "value": "Union"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "uploadedBy",
+            "value": "String"
+          }
+        ]
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "folder",
+        "value": [
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "id",
+            "value": "String"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "name",
+            "value": "String"
+          },
+          {
+            "optional": true,
+            "type": "ObjectTypeProperty",
+            "name": "parentId",
+            "value": "String"
+          },
+          {
+            "optional": true,
+            "type": "ObjectTypeProperty",
+            "name": "parentNumericId",
+            "value": "Number"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "projectId",
+            "value": "String"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "numericId",
+            "value": "Number"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "folderCount",
+            "value": "Number"
+          }
+        ]
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "invitation",
+        "value": [
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "accepted",
+            "value": "Boolean"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "accountId",
+            "value": "String"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "created",
+            "value": "Number"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "hostname",
+            "value": "String"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "id",
+            "value": "String"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "invitedBy",
+            "value": "String"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "invitedByName",
+            "value": "String"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "projectId",
+            "value": "String"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "projectName",
+            "value": "String"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "recipientEmail",
+            "value": "String"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "recipientIsNewUser",
+            "value": "Boolean"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "roleTemplateId",
+            "value": "String"
+          }
+        ]
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "project",
+        "value": [
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "aggregates",
+            "value": [
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "averageDuration",
+                "value": "Number"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "averageFileSize",
+                "value": "Number"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "totalAssets",
+                "value": "Number"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "totalDuration",
+                "value": "Number"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "totalFileSize",
+                "value": "Number"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "totalFolders",
+                "value": "Number"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "totalUsers",
+                "value": "Number"
+              }
+            ]
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "banner",
+            "value": "String"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "dateCreated",
+            "value": "Number"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "description",
+            "value": "String"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "favorite",
+            "value": "Boolean"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "folderCount",
+            "value": "Number"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "id",
+            "value": "String"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "isWatermarked",
+            "value": "Boolean"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "name",
+            "value": "String"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "numericId",
+            "value": "Number"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "ownerId",
+            "value": "String"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "poster",
+            "value": "String"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "quickSite",
+            "value": "Boolean"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "type",
+            "value": "String"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "users",
+            "value": "UserArray"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "owners",
+            "value": "UserArray"
+          }
+        ]
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "projectIds",
+        "value": "StringArray"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "project_user",
+        "value": [
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "id",
+            "value": "String"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "userName",
+            "value": "String"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "firstName",
+            "value": "String"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "lastName",
+            "value": "String"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "roles",
+            "value": "RoleArray"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "email",
+            "value": "String"
+          }
+        ]
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "quickLink",
+        "value": [
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "accountId",
+            "value": "String"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "approvals",
+            "value": "QuicklinkApprovalArray"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "assetIds",
+            "value": "StringArray"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "configuration",
+            "value": [
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "id",
+                "value": "String"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "settings",
+                "value": "ObjectArray"
+              }
+            ]
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "created",
+            "value": "Number"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "description",
+            "value": "String"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "expires",
+            "value": "Number"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "id",
+            "value": "String"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "modified",
+            "value": "Number"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "ownerId",
+            "value": "String"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "password",
+            "value": "Boolean"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "private",
+            "value": "Boolean"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "public",
+            "value": "Boolean"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "signed",
+            "value": "Boolean"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "shareId",
+            "value": "String"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "thumbnail",
+            "value": "String"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "title",
+            "value": "String"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "url",
+            "value": "String"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "watermarked",
+            "value": "Boolean"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "shares",
+            "value": "Nullable"
+          }
+        ]
+      }
+    ]
+  },
+  "ProjectEvent": {
+    "type": "DeclareTypeAlias",
+    "name": "ProjectEvent",
+    "value": [
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "accountId",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "created",
+        "value": "Number"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "entity",
+        "value": [
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "asset",
+            "value": [
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "id",
+                "value": "String"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "approvalStatus",
+                "value": "Union"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "archiveStatus",
+                "value": "Union"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "averageRating",
+                "value": "Any"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "commentCount",
+                "value": "Number"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "dateCreated",
+                "value": "Number"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "dateModified",
+                "value": "Number"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "derivatives",
+                "value": "DerivativeArray"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "description",
+                "value": "String"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "duration",
+                "value": "Number"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "external",
+                "value": "Boolean"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "fileName",
+                "value": "String"
+              },
+              {
+                "optional": true,
+                "type": "ObjectTypeProperty",
+                "name": "folderId",
+                "value": "String"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "myRating",
+                "value": "Any"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "permissions",
+                "value": "AssetPermissionArray"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "posterFrame",
+                "value": "String"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "private",
+                "value": "Boolean"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "progress",
+                "value": "Number"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "projectId",
+                "value": "String"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "sprites",
+                "value": [
+                  {
+                    "optional": false,
+                    "type": "ObjectTypeProperty",
+                    "name": "timeFetched",
+                    "value": "moment$Moment"
+                  },
+                  {
+                    "optional": false,
+                    "type": "ObjectTypeProperty",
+                    "name": "image",
+                    "value": "String"
+                  },
+                  {
+                    "optional": false,
+                    "type": "ObjectTypeProperty",
+                    "name": "coords",
+                    "value": "SpriteCoordsArray"
+                  }
+                ]
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "tags",
+                "value": "StringArray"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "title",
+                "value": "String"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "transcriptStatus",
+                "value": "Union"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "type",
+                "value": "Union"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "uploadedBy",
+                "value": "String"
+              }
+            ]
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "folder",
+            "value": [
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "id",
+                "value": "String"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "name",
+                "value": "String"
+              },
+              {
+                "optional": true,
+                "type": "ObjectTypeProperty",
+                "name": "parentId",
+                "value": "String"
+              },
+              {
+                "optional": true,
+                "type": "ObjectTypeProperty",
+                "name": "parentNumericId",
+                "value": "Number"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "projectId",
+                "value": "String"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "numericId",
+                "value": "Number"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "folderCount",
+                "value": "Number"
+              }
+            ]
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "invitation",
+            "value": [
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "accepted",
+                "value": "Boolean"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "accountId",
+                "value": "String"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "created",
+                "value": "Number"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "hostname",
+                "value": "String"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "id",
+                "value": "String"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "invitedBy",
+                "value": "String"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "invitedByName",
+                "value": "String"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "projectId",
+                "value": "String"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "projectName",
+                "value": "String"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "recipientEmail",
+                "value": "String"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "recipientIsNewUser",
+                "value": "Boolean"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "roleTemplateId",
+                "value": "String"
+              }
+            ]
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "project",
+            "value": [
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "aggregates",
+                "value": [
+                  {
+                    "optional": false,
+                    "type": "ObjectTypeProperty",
+                    "name": "averageDuration",
+                    "value": "Number"
+                  },
+                  {
+                    "optional": false,
+                    "type": "ObjectTypeProperty",
+                    "name": "averageFileSize",
+                    "value": "Number"
+                  },
+                  {
+                    "optional": false,
+                    "type": "ObjectTypeProperty",
+                    "name": "totalAssets",
+                    "value": "Number"
+                  },
+                  {
+                    "optional": false,
+                    "type": "ObjectTypeProperty",
+                    "name": "totalDuration",
+                    "value": "Number"
+                  },
+                  {
+                    "optional": false,
+                    "type": "ObjectTypeProperty",
+                    "name": "totalFileSize",
+                    "value": "Number"
+                  },
+                  {
+                    "optional": false,
+                    "type": "ObjectTypeProperty",
+                    "name": "totalFolders",
+                    "value": "Number"
+                  },
+                  {
+                    "optional": false,
+                    "type": "ObjectTypeProperty",
+                    "name": "totalUsers",
+                    "value": "Number"
+                  }
+                ]
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "banner",
+                "value": "String"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "dateCreated",
+                "value": "Number"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "description",
+                "value": "String"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "favorite",
+                "value": "Boolean"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "folderCount",
+                "value": "Number"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "id",
+                "value": "String"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "isWatermarked",
+                "value": "Boolean"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "name",
+                "value": "String"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "numericId",
+                "value": "Number"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "ownerId",
+                "value": "String"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "poster",
+                "value": "String"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "quickSite",
+                "value": "Boolean"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "type",
+                "value": "String"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "users",
+                "value": "UserArray"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "owners",
+                "value": "UserArray"
+              }
+            ]
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "projectIds",
+            "value": "StringArray"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "project_user",
+            "value": [
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "id",
+                "value": "String"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "userName",
+                "value": "String"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "firstName",
+                "value": "String"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "lastName",
+                "value": "String"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "roles",
+                "value": "RoleArray"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "email",
+                "value": "String"
+              }
+            ]
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "quickLink",
+            "value": [
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "accountId",
+                "value": "String"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "approvals",
+                "value": "QuicklinkApprovalArray"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "assetIds",
+                "value": "StringArray"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "configuration",
+                "value": [
+                  {
+                    "optional": false,
+                    "type": "ObjectTypeProperty",
+                    "name": "id",
+                    "value": "String"
+                  },
+                  {
+                    "optional": false,
+                    "type": "ObjectTypeProperty",
+                    "name": "settings",
+                    "value": "ObjectArray"
+                  }
+                ]
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "created",
+                "value": "Number"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "description",
+                "value": "String"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "expires",
+                "value": "Number"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "id",
+                "value": "String"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "modified",
+                "value": "Number"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "ownerId",
+                "value": "String"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "password",
+                "value": "Boolean"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "private",
+                "value": "Boolean"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "public",
+                "value": "Boolean"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "signed",
+                "value": "Boolean"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "shareId",
+                "value": "String"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "thumbnail",
+                "value": "String"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "title",
+                "value": "String"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "url",
+                "value": "String"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "watermarked",
+                "value": "Boolean"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "shares",
+                "value": "Nullable"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "eventName",
+        "value": "Union"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "hostname",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "user",
+        "value": [
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "id",
+            "value": "String"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "userName",
+            "value": "String"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "firstName",
+            "value": "String"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "lastName",
+            "value": "String"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "roles",
+            "value": "RoleArray"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "email",
+            "value": "String"
+          }
+        ]
+      }
+    ]
+  },
+  "ProjectEvents": {
+    "type": "DeclareTypeAlias",
+    "name": "ProjectEvents",
+    "value": [
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "code",
+        "value": "Number"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "data",
+        "value": "ProjectEventArray"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "message",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "success",
+        "value": "Boolean"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "total",
+        "value": "Number"
+      }
+    ]
+  },
+  "ProjectAggregates": {
+    "type": "DeclareTypeAlias",
+    "name": "ProjectAggregates",
+    "value": [
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "averageDuration",
+        "value": "Number"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "averageFileSize",
+        "value": "Number"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "totalAssets",
+        "value": "Number"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "totalDuration",
+        "value": "Number"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "totalFileSize",
+        "value": "Number"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "totalFolders",
+        "value": "Number"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "totalUsers",
+        "value": "Number"
+      }
+    ]
+  },
+  "Project": {
+    "type": "DeclareTypeAlias",
+    "name": "Project",
+    "value": [
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "aggregates",
+        "value": [
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "averageDuration",
+            "value": "Number"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "averageFileSize",
+            "value": "Number"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "totalAssets",
+            "value": "Number"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "totalDuration",
+            "value": "Number"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "totalFileSize",
+            "value": "Number"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "totalFolders",
+            "value": "Number"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "totalUsers",
+            "value": "Number"
+          }
+        ]
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "banner",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "dateCreated",
+        "value": "Number"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "description",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "favorite",
+        "value": "Boolean"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "folderCount",
+        "value": "Number"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "id",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "isWatermarked",
+        "value": "Boolean"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "name",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "numericId",
+        "value": "Number"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "ownerId",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "poster",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "quickSite",
+        "value": "Boolean"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "type",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "users",
+        "value": "UserArray"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "owners",
+        "value": "UserArray"
+      }
+    ]
+  },
+  "UserProjectPermission": {
+    "type": "DeclareTypeAlias",
+    "name": "UserProjectPermission",
+    "value": "Union"
+  },
+  "UserProjectPermissionsMap": {
+    "type": "DeclareTypeAlias",
+    "name": "UserProjectPermissionsMap",
+    "value": []
+  },
+  "ProjectInvite": {
+    "type": "DeclareTypeAlias",
+    "name": "ProjectInvite",
+    "value": [
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "accepted",
+        "value": "Boolean"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "accountId",
+        "value": "Number"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "created",
+        "value": "Number"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "hostname",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "id",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "invitedby",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "invitedByName",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "projectId",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "projectName",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "recipientEmail",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "recipientIsNewUser",
+        "value": "Boolean"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "roleTemplateId",
+        "value": "String"
+      }
+    ]
+  },
+  "QuicklinkConfiguration": {
+    "type": "DeclareTypeAlias",
+    "name": "QuicklinkConfiguration",
+    "value": [
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "id",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "settings",
+        "value": "ObjectArray"
+      }
+    ]
+  },
+  "Quicklink": {
+    "type": "DeclareTypeAlias",
+    "name": "Quicklink",
+    "value": [
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "accountId",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "approvals",
+        "value": "QuicklinkApprovalArray"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "assetIds",
+        "value": "StringArray"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "configuration",
+        "value": [
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "id",
+            "value": "String"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "settings",
+            "value": "ObjectArray"
+          }
+        ]
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "created",
+        "value": "Number"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "description",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "expires",
+        "value": "Number"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "id",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "modified",
+        "value": "Number"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "ownerId",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "password",
+        "value": "Boolean"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "private",
+        "value": "Boolean"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "public",
+        "value": "Boolean"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "signed",
+        "value": "Boolean"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "shareId",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "thumbnail",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "title",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "url",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "watermarked",
+        "value": "Boolean"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "shares",
+        "value": "Nullable"
+      }
+    ]
+  },
+  "Contact": {
+    "type": "DeclareTypeAlias",
+    "name": "Contact",
+    "value": [
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "id",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "firstName",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "lastName",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "company",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "email",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "lastLogin",
+        "value": "Number"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "unreadCount",
+        "value": "Number"
+      }
+    ]
+  },
+  "QuicklinkShare": {
+    "type": "DeclareTypeAlias",
+    "name": "QuicklinkShare",
+    "value": [
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "created",
+        "value": "Number"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "emailShare",
+        "value": [
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "audience",
+            "value": "QuicklinkEmailShareAudienceArray"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "message",
+            "value": "String"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "subject",
+            "value": "String"
+          }
+        ]
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "id",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "notifyByEmail",
+        "value": "Boolean"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "sharedBy",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "sharedByEmail",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "sharedByFirstName",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "sharedByLastName",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "targetObjectId",
+        "value": "String"
+      }
+    ]
+  },
+  "QuicklinkEmailShare": {
+    "type": "DeclareTypeAlias",
+    "name": "QuicklinkEmailShare",
+    "value": [
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "audience",
+        "value": "QuicklinkEmailShareAudienceArray"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "message",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "subject",
+        "value": "String"
+      }
+    ]
+  },
+  "QuicklinkEmailShareAudience": {
+    "type": "DeclareTypeAlias",
+    "name": "QuicklinkEmailShareAudience",
+    "value": [
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "firstName",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "lastName",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "email",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "inbox",
+        "value": "Boolean"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "recipientType",
+        "value": "Nullable"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "userId",
+        "value": "Nullable"
+      }
+    ]
+  },
+  "QuicklinkApproval": {
+    "type": "DeclareTypeAlias",
+    "name": "QuicklinkApproval",
+    "value": [
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "assetId",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "dateCreated",
+        "value": "Number"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "userId",
+        "value": "String"
+      }
+    ]
+  },
+  "ShareRecipient": {
+    "type": "DeclareTypeAlias",
+    "name": "ShareRecipient",
+    "value": [
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "email",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "firstName",
+        "value": "Nullable"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "lastName",
+        "value": "Nullable"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "userId",
+        "value": "Nullable"
+      }
+    ]
+  },
+  "EmailShare": {
+    "type": "DeclareTypeAlias",
+    "name": "EmailShare",
+    "value": [
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "subject",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "message",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "audience",
+        "value": "ShareRecipientArray"
+      }
+    ]
+  },
+  "QuicklinkShareData": {
+    "type": "DeclareTypeAlias",
+    "name": "QuicklinkShareData",
+    "value": [
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "notifyByEmail",
+        "value": "Boolean"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "sharedByEmail",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "sharedByFirstName",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "sharedByLastName",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "emailShare",
+        "value": [
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "subject",
+            "value": "String"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "message",
+            "value": "String"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "audience",
+            "value": "ShareRecipientArray"
+          }
+        ]
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "title",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "description",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "configuration",
+        "value": [
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "settings",
+            "value": "ObjectArray"
+          }
+        ]
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "expires",
+        "value": "Number"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "thumbnail",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "assetIds",
+        "value": "StringArray"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "authorizedUserIds",
+        "value": "StringArray"
+      }
+    ]
+  },
+  "ShiftUser": {
+    "type": "DeclareTypeAlias",
+    "name": "ShiftUser",
+    "value": [
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "id",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "email",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "emailVerified",
+        "value": "Boolean"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "clientId",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "apiKey",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "createdOn",
+        "value": "Number"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "name",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "domains",
+        "value": "DomainArray"
+      }
+    ]
+  },
+  "SocketActor": {
+    "type": "DeclareTypeAlias",
+    "name": "SocketActor",
+    "value": [
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "id",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "avatar",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "firstName",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "lastName",
+        "value": "String"
+      }
+    ]
+  },
+  "SocketData": {
+    "type": "DeclareTypeAlias",
+    "name": "SocketData",
+    "value": [
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "actor",
+        "value": [
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "id",
+            "value": "String"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "avatar",
+            "value": "String"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "firstName",
+            "value": "String"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "lastName",
+            "value": "String"
+          }
+        ]
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "accountId",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "entity",
+        "value": [
+          {
+            "optional": true,
+            "type": "ObjectTypeProperty",
+            "name": "project",
+            "value": [
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "aggregates",
+                "value": [
+                  {
+                    "optional": false,
+                    "type": "ObjectTypeProperty",
+                    "name": "averageDuration",
+                    "value": "Number"
+                  },
+                  {
+                    "optional": false,
+                    "type": "ObjectTypeProperty",
+                    "name": "averageFileSize",
+                    "value": "Number"
+                  },
+                  {
+                    "optional": false,
+                    "type": "ObjectTypeProperty",
+                    "name": "totalAssets",
+                    "value": "Number"
+                  },
+                  {
+                    "optional": false,
+                    "type": "ObjectTypeProperty",
+                    "name": "totalDuration",
+                    "value": "Number"
+                  },
+                  {
+                    "optional": false,
+                    "type": "ObjectTypeProperty",
+                    "name": "totalFileSize",
+                    "value": "Number"
+                  },
+                  {
+                    "optional": false,
+                    "type": "ObjectTypeProperty",
+                    "name": "totalFolders",
+                    "value": "Number"
+                  },
+                  {
+                    "optional": false,
+                    "type": "ObjectTypeProperty",
+                    "name": "totalUsers",
+                    "value": "Number"
+                  }
+                ]
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "banner",
+                "value": "String"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "dateCreated",
+                "value": "Number"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "description",
+                "value": "String"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "favorite",
+                "value": "Boolean"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "folderCount",
+                "value": "Number"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "id",
+                "value": "String"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "isWatermarked",
+                "value": "Boolean"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "name",
+                "value": "String"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "numericId",
+                "value": "Number"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "ownerId",
+                "value": "String"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "poster",
+                "value": "String"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "quickSite",
+                "value": "Boolean"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "type",
+                "value": "String"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "users",
+                "value": "UserArray"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "owners",
+                "value": "UserArray"
+              }
+            ]
+          },
+          {
+            "optional": true,
+            "type": "ObjectTypeProperty",
+            "name": "payload",
+            "value": [
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "type",
+                "value": "String"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "id",
+                "value": "String"
+              }
+            ]
+          },
+          {
+            "optional": true,
+            "type": "ObjectTypeProperty",
+            "name": "asset",
+            "value": [
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "id",
+                "value": "String"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "approvalStatus",
+                "value": "Union"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "archiveStatus",
+                "value": "Union"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "averageRating",
+                "value": "Any"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "commentCount",
+                "value": "Number"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "dateCreated",
+                "value": "Number"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "dateModified",
+                "value": "Number"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "derivatives",
+                "value": "DerivativeArray"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "description",
+                "value": "String"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "duration",
+                "value": "Number"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "external",
+                "value": "Boolean"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "fileName",
+                "value": "String"
+              },
+              {
+                "optional": true,
+                "type": "ObjectTypeProperty",
+                "name": "folderId",
+                "value": "String"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "myRating",
+                "value": "Any"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "permissions",
+                "value": "AssetPermissionArray"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "posterFrame",
+                "value": "String"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "private",
+                "value": "Boolean"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "progress",
+                "value": "Number"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "projectId",
+                "value": "String"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "sprites",
+                "value": [
+                  {
+                    "optional": false,
+                    "type": "ObjectTypeProperty",
+                    "name": "timeFetched",
+                    "value": "moment$Moment"
+                  },
+                  {
+                    "optional": false,
+                    "type": "ObjectTypeProperty",
+                    "name": "image",
+                    "value": "String"
+                  },
+                  {
+                    "optional": false,
+                    "type": "ObjectTypeProperty",
+                    "name": "coords",
+                    "value": "SpriteCoordsArray"
+                  }
+                ]
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "tags",
+                "value": "StringArray"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "title",
+                "value": "String"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "transcriptStatus",
+                "value": "Union"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "type",
+                "value": "Union"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "uploadedBy",
+                "value": "String"
+              }
+            ]
+          },
+          {
+            "optional": true,
+            "type": "ObjectTypeProperty",
+            "name": "comment",
+            "value": [
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "id",
+                "value": "String"
+              },
+              {
+                "optional": true,
+                "type": "ObjectTypeProperty",
+                "name": "localId",
+                "value": "String"
+              },
+              {
+                "optional": true,
+                "type": "ObjectTypeProperty",
+                "name": "inResponseTo",
+                "value": "String"
+              },
+              {
+                "optional": true,
+                "type": "ObjectTypeProperty",
+                "name": "context",
+                "value": "String"
+              },
+              {
+                "optional": true,
+                "type": "ObjectTypeProperty",
+                "name": "startTimeCode",
+                "value": "Number"
+              },
+              {
+                "optional": true,
+                "type": "ObjectTypeProperty",
+                "name": "endTimeCode",
+                "value": "Number"
+              },
+              {
+                "optional": true,
+                "type": "ObjectTypeProperty",
+                "name": "dateCreated",
+                "value": "Number"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "body",
+                "value": "String"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "drawings",
+                "value": "Nullable"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "user",
+                "value": "$Shape"
+              },
+              {
+                "optional": true,
+                "type": "ObjectTypeProperty",
+                "name": "done",
+                "value": "Boolean"
+              },
+              {
+                "optional": true,
+                "type": "ObjectTypeProperty",
+                "name": "responses",
+                "value": "CommentArray"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "status",
+                "value": "String"
+              }
+            ]
+          },
+          {
+            "optional": true,
+            "type": "ObjectTypeProperty",
+            "name": "quickLink",
+            "value": [
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "accountId",
+                "value": "String"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "approvals",
+                "value": "QuicklinkApprovalArray"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "assetIds",
+                "value": "StringArray"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "configuration",
+                "value": [
+                  {
+                    "optional": false,
+                    "type": "ObjectTypeProperty",
+                    "name": "id",
+                    "value": "String"
+                  },
+                  {
+                    "optional": false,
+                    "type": "ObjectTypeProperty",
+                    "name": "settings",
+                    "value": "ObjectArray"
+                  }
+                ]
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "created",
+                "value": "Number"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "description",
+                "value": "String"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "expires",
+                "value": "Number"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "id",
+                "value": "String"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "modified",
+                "value": "Number"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "ownerId",
+                "value": "String"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "password",
+                "value": "Boolean"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "private",
+                "value": "Boolean"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "public",
+                "value": "Boolean"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "signed",
+                "value": "Boolean"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "shareId",
+                "value": "String"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "thumbnail",
+                "value": "String"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "title",
+                "value": "String"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "url",
+                "value": "String"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "watermarked",
+                "value": "Boolean"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "shares",
+                "value": "Nullable"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "eventName",
+        "value": "String"
+      }
+    ]
+  },
+  "Socket": {
+    "type": "DeclareTypeAlias",
+    "name": "Socket",
+    "value": [
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "addListener",
+        "value": "Function"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "removeListener",
+        "value": "Function"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "subscribeToChannel",
+        "value": "Function"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "removeAllListeners",
+        "value": "Function"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "isSubscribed",
+        "value": "Function"
+      }
+    ]
+  },
+  "SocketListener": {
+    "type": "DeclareTypeAlias",
+    "name": "SocketListener",
+    "value": "Function"
+  },
+  "PendingSocketListener": {
+    "type": "DeclareTypeAlias",
+    "name": "PendingSocketListener",
+    "value": [
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "eventName",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "listener",
+        "value": "Function"
+      }
+    ]
+  },
+  "SocketListenerFactory": {
+    "type": "DeclareTypeAlias",
+    "name": "SocketListenerFactory",
+    "value": "Function"
+  },
+  "SortDirection": {
+    "type": "DeclareTypeAlias",
+    "name": "SortDirection",
+    "value": "Union"
+  },
+  "ThemePalette": {
+    "type": "DeclareTypeAlias",
+    "name": "ThemePalette",
+    "value": [
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "primary",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "secondary",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "tertiary",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "accent",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "dark",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "light",
+        "value": "String"
+      }
+    ]
+  },
+  "ThemeFocus": {
+    "type": "DeclareTypeAlias",
+    "name": "ThemeFocus",
+    "value": [
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "unselected",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "hovered",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "focused",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "mutedSelected",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "selected",
+        "value": "String"
+      }
+    ]
+  },
+  "ThemeStructure": {
+    "type": "DeclareTypeAlias",
+    "name": "ThemeStructure",
+    "value": [
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "nav",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "navBorder",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "secondaryNav",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "background",
+        "value": "String"
+      }
+    ]
+  },
+  "ThemeAccents": {
+    "type": "DeclareTypeAlias",
+    "name": "ThemeAccents",
+    "value": [
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "success",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "default",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "destructive",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "hover",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "dark",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "dashboardIcon",
+        "value": "String"
+      }
+    ]
+  },
+  "ThemeText": {
+    "type": "DeclareTypeAlias",
+    "name": "ThemeText",
+    "value": [
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "primary",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "secondary",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "tertiary",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "subdued",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "dark",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "light",
+        "value": "String"
+      }
+    ]
+  },
+  "Theme": {
+    "type": "DeclareTypeAlias",
+    "name": "Theme",
+    "value": [
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "palette",
+        "value": [
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "primary",
+            "value": "String"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "secondary",
+            "value": "String"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "tertiary",
+            "value": "String"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "accent",
+            "value": "String"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "dark",
+            "value": "String"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "light",
+            "value": "String"
+          }
+        ]
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "text",
+        "value": [
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "primary",
+            "value": "String"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "secondary",
+            "value": "String"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "tertiary",
+            "value": "String"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "subdued",
+            "value": "String"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "dark",
+            "value": "String"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "light",
+            "value": "String"
+          }
+        ]
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "accents",
+        "value": [
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "success",
+            "value": "String"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "default",
+            "value": "String"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "destructive",
+            "value": "String"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "hover",
+            "value": "String"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "dark",
+            "value": "String"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "dashboardIcon",
+            "value": "String"
+          }
+        ]
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "focus",
+        "value": [
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "unselected",
+            "value": "String"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "hovered",
+            "value": "String"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "focused",
+            "value": "String"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "mutedSelected",
+            "value": "String"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "selected",
+            "value": "String"
+          }
+        ]
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "structure",
+        "value": [
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "nav",
+            "value": "String"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "navBorder",
+            "value": "String"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "secondaryNav",
+            "value": "String"
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "background",
+            "value": "String"
+          }
+        ]
+      }
+    ]
+  },
+  "GlamTheme": {
+    "type": "DeclareTypeAlias",
+    "name": "GlamTheme",
+    "value": [
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "theme",
+        "value": [
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "palette",
+            "value": [
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "primary",
+                "value": "String"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "secondary",
+                "value": "String"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "tertiary",
+                "value": "String"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "accent",
+                "value": "String"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "dark",
+                "value": "String"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "light",
+                "value": "String"
+              }
+            ]
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "text",
+            "value": [
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "primary",
+                "value": "String"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "secondary",
+                "value": "String"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "tertiary",
+                "value": "String"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "subdued",
+                "value": "String"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "dark",
+                "value": "String"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "light",
+                "value": "String"
+              }
+            ]
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "accents",
+            "value": [
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "success",
+                "value": "String"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "default",
+                "value": "String"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "destructive",
+                "value": "String"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "hover",
+                "value": "String"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "dark",
+                "value": "String"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "dashboardIcon",
+                "value": "String"
+              }
+            ]
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "focus",
+            "value": [
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "unselected",
+                "value": "String"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "hovered",
+                "value": "String"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "focused",
+                "value": "String"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "mutedSelected",
+                "value": "String"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "selected",
+                "value": "String"
+              }
+            ]
+          },
+          {
+            "optional": false,
+            "type": "ObjectTypeProperty",
+            "name": "structure",
+            "value": [
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "nav",
+                "value": "String"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "navBorder",
+                "value": "String"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "secondaryNav",
+                "value": "String"
+              },
+              {
+                "optional": false,
+                "type": "ObjectTypeProperty",
+                "name": "background",
+                "value": "String"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "TouchBarButtonSpec": {
+    "type": "DeclareTypeAlias",
+    "name": "TouchBarButtonSpec",
+    "value": [
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "type",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "priority",
+        "value": "Nullable"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "options",
+        "value": "Any"
+      }
+    ]
+  },
+  "UploadItemId": {
+    "type": "DeclareTypeAlias",
+    "name": "UploadItemId",
+    "value": "String"
+  },
+  "UploadItem": {
+    "type": "DeclareTypeAlias",
+    "name": "UploadItem",
+    "value": [
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "localId",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "serverId",
+        "value": "Nullable"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "uploadProgress",
+        "value": "Number"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "encodeProgress",
+        "value": "Number"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "file",
+        "value": "Any"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "fileName",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "fileSize",
+        "value": "Number"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "projectId",
+        "value": "String"
+      },
+      {
+        "optional": true,
+        "type": "ObjectTypeProperty",
+        "name": "parentId",
+        "value": "String"
+      }
+    ]
+  },
+  "Role": {
+    "type": "DeclareTypeAlias",
+    "name": "Role",
+    "value": [
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "id",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "displayName",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "description",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "context",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "level",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "visible",
+        "value": "Boolean"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "default",
+        "value": "Boolean"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "permissionGroups",
+        "value": "PermissionGroupArray"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "roleTemplateId",
+        "value": "String"
+      }
+    ]
+  },
+  "RoleTemplate": {
+    "type": "DeclareTypeAlias",
+    "name": "RoleTemplate",
+    "value": [
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "default",
+        "value": "Boolean"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "deleted",
+        "value": "Boolean"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "description",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "displayName",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "id",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "permissionGroups",
+        "value": "PermissionGroupArray"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "visible",
+        "value": "Boolean"
+      }
+    ]
+  },
+  "User": {
+    "type": "DeclareTypeAlias",
+    "name": "User",
+    "value": [
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "id",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "userName",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "firstName",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "lastName",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "roles",
+        "value": "RoleArray"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "email",
+        "value": "String"
+      }
+    ]
+  },
+  "UserDomainPermissionsMap": {
+    "type": "DeclareTypeAlias",
+    "name": "UserDomainPermissionsMap",
+    "value": []
+  },
+  "Dimensions": {
+    "type": "DeclareTypeAlias",
+    "name": "Dimensions",
+    "value": [
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "height",
+        "value": "Number"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "width",
+        "value": "Number"
+      }
+    ]
+  },
+  "OverscanIndicesGetterFn": {
+    "type": "DeclareTypeAlias",
+    "name": "OverscanIndicesGetterFn",
+    "value": "Function"
+  },
+  "IndexRange": {
+    "type": "DeclareTypeAlias",
+    "name": "IndexRange",
+    "value": [
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "startIndex",
+        "value": "Number"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "stopIndex",
+        "value": "Number"
+      }
+    ]
+  },
+  "SectionRange": {
+    "type": "DeclareTypeAlias",
+    "name": "SectionRange",
+    "value": [
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "rowStartIndex",
+        "value": "Number"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "rowStopIndex",
+        "value": "Number"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "columnStartIndex",
+        "value": "Number"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "columnStopIndex",
+        "value": "Number"
+      }
+    ]
+  },
+  "CellRendererFn": {
+    "type": "DeclareTypeAlias",
+    "name": "CellRendererFn",
+    "value": [
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "columnIndex",
+        "value": "Number"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "isScrolling",
+        "value": "Boolean"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "isVisible",
+        "value": "Boolean"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "key",
+        "value": "String"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "parent",
+        "value": "React$Element"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "rowIndex",
+        "value": "Number"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "style",
+        "value": []
+      }
+    ]
+  },
+  "ArrowStepperProps": {
+    "type": "DeclareTypeAlias",
+    "name": "ArrowStepperProps",
+    "value": [
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "scrollToRow",
+        "value": "Number"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "scrollToColumn",
+        "value": "Number"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "onSectionRendered",
+        "value": "Function"
+      }
+    ]
+  },
+  "ScrollRange": {
+    "type": "DeclareTypeAlias",
+    "name": "ScrollRange",
+    "value": [
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "scrollToRow",
+        "value": "Number"
+      },
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "scrollToColumn",
+        "value": "Number"
+      }
+    ]
+  },
+  "Index": {
+    "type": "DeclareTypeAlias",
+    "name": "Index",
+    "value": [
+      {
+        "optional": false,
+        "type": "ObjectTypeProperty",
+        "name": "index",
+        "value": "Number"
+      }
+    ]
+  }
+}

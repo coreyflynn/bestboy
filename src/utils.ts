@@ -11,52 +11,64 @@ import * as faker from 'faker';
 import * as chalk from 'chalk';
 import * as cosmiconfig from 'cosmiconfig';
 import * as objectPath from 'object-path';
+import { compose, map, contains, addIndex } from 'ramda';
+import { findFlowConfig, getPrimitivesTypes, replaceGenericWithPrimitive } from './flowUtils';
 import defaultConfig from './defaultConfig';
 import pathPrompt from './prompts/pathPrompt';
 
-interface BestBoyNode {
-  name: string,
-  optional: boolean,
-  value: BestBoyNode[] | string,
-}
-
-interface ESTreeNode {
-  type: string,
-  optional: boolean,
-  value: {
-    type: string,
-    properties: ESTreeNode[],
-  },
-  key: {
-    name: string,
-  },
-  id: {
-    name: string,
-  },
-  right: {
-    properties: any,
-  },
-}
-
-interface Props {
-  [key: string]: any,
-}
-
-function transformNode(node: ESTreeNode) {
+export function transformNode(node: ESTreeNode) {
   const transformed: BestBoyNode = {
     optional: node.optional,
-    name: node.key.name,
+    type: node.type,
+    name: node.id ? node.id.name : node.key ? node.key.name : node.type,
     value: [],
   };
-  if (node.value.type === 'ObjectTypeAnnotation') {
-    transformed.value = node.value.properties.map(transformNode);
-  } else {
-    transformed.value = node.value.type.replace('TypeAnnotation', '');
+  if (node.type === 'DeclareTypeAlias' && node.right.properties) {
+    transformed.value = node.right.properties.map(transformNode);
+    return transformed;
   }
+
+  if (node.type === 'DeclareTypeAlias' && !node.right.properties && node.right.type) {
+    transformed.value = node.right.type.replace('TypeAnnotation', '');
+    return transformed;
+  }
+
+  if (node.value && node.value.type === 'GenericTypeAnnotation' && node.value.id) {
+    transformed.value = node.value.id.name;
+    return transformed;
+  }
+
+  if (node.value && node.value.type === 'ObjectTypeAnnotation') {
+    transformed.value = node.value.properties.map(transformNode);
+    return transformed;
+  }
+
+  if (node.value && node.value.type === 'UnionTypeAnnotation' && node.value.types) {
+    transformed.value = node.value.types[0].type.replace('TypeAnnotation', '');
+    return transformed;
+  }
+
+  if (node.value && node.value.type === 'ArrayTypeAnnotation' && node.value.elementType) {
+    const { value: { elementType } } = node;
+    if (elementType.type === 'GenericTypeAnnotation' && elementType.id) {
+      transformed.value = `${elementType.id.name}Array`;
+    } else {
+      transformed.value = `${elementType.type.replace('TypeAnnotation', '')}Array`;
+    }
+    return transformed;
+  }
+  
+  transformed.value = node.value && node.value.type
+    ? node.value.type.replace('TypeAnnotation', '')
+    : [];
   return transformed;
 }
 
-function generateFakeValue(valueType: string) {
+function generateFakeValue(valueType: string): any {
+  if (valueType.includes('Array')) {
+    return [generateFakeValue(valueType.replace('Array', ''))];
+  }
+
   switch (valueType) {
     case 'Boolean':
       return faker.random.boolean();
@@ -68,6 +80,8 @@ function generateFakeValue(valueType: string) {
       return [];
     case 'Generic':
       return {};
+    case 'Function':
+      return () => {};
     case 'NullLiteral':
       return null;
     case 'Nullable':
@@ -89,8 +103,7 @@ function nodesToRandomProps(nodes: BestBoyNode[] | string, excludeOptionals = tr
       const { name, value } = node;
       if (value instanceof Array) {
         props[name] = nodesToRandomProps(value);
-      }
-      if (value instanceof String) {
+      } else {
         props[name] = generateFakeValue(value as string);
       }
     });
@@ -98,7 +111,7 @@ function nodesToRandomProps(nodes: BestBoyNode[] | string, excludeOptionals = tr
   return props;
 }
 
-export function createPropVariations(target: string) {
+export function createPropVariations(target: string, vorpal?: Vorpal) {
   const targetString = fs.readFileSync(target).toString();
   const ast = recast.parse(targetString, {
     parser: flow,
@@ -131,8 +144,12 @@ export function createPropVariations(target: string) {
     fallback: 'iteration',
   });
 
-  const props = transformNode(root).value;
-  return [nodesToRandomProps(props, true), nodesToRandomProps(props, false)];
+  
+  let props = transformNode(root);
+  if (vorpal && vorpal.primitiveTypes) {
+    props = replaceGenericWithPrimitive(vorpal.primitiveTypes)(props);
+  }
+  return [nodesToRandomProps(props.value, true), nodesToRandomProps(props.value, false)];
 }
 
 export function createFolderIfNeeded(path: string) {
@@ -166,7 +183,45 @@ export function bootstrap(vorpal: Vorpal): Vorpal {
   };
   vorpal.config = config;
   vorpal.configPath = filepath;
-  return setBestBoyPrompt(vorpal);
+  return setBestBoyPrompt(updateFlowTypes(vorpal));
+}
+
+export function updateFlowTypes(vorpal: Vorpal): Vorpal {
+  const candidateConfig = findFlowConfig();
+
+  if (!vorpal.flowConfigPath) {
+    vorpal.log(vorpal.chalk.blue(`building types from  ${candidateConfig}`));
+    vorpal.flowConfigPath = candidateConfig;
+    vorpal.primitiveTypes = getPrimitivesTypes();
+    return vorpal;
+  }
+
+  if (vorpal.flowConfigPath && candidateConfig && vorpal.flowConfigPath !== candidateConfig) {
+    const  currentPathParts = path.dirname(vorpal.flowConfigPath).split('/');
+    const  candidatePathParts = path.dirname(vorpal.flowConfigPath).split('/');
+    
+    const currentConfigDepth = currentPathParts.length;
+    const candidateConfigDepth = candidatePathParts.length;
+    if (candidateConfigDepth >= currentConfigDepth) {
+      vorpal.log(vorpal.chalk.blue(`building types from  ${candidateConfig}`));
+      vorpal.flowConfigPath = candidateConfig;
+      vorpal.primitiveTypes = getPrimitivesTypes();
+      return vorpal;
+    }
+
+    const candidateIsOffPath = compose(
+      contains(false),
+      addIndex(map)((item, idx) => item === currentPathParts[idx]),
+    )(candidatePathParts);
+
+    if (candidateIsOffPath) {
+      vorpal.log(vorpal.chalk.blue(`building types from ${candidateConfig}`));
+      vorpal.flowConfigPath = candidateConfig;
+      vorpal.primitiveTypes = getPrimitivesTypes();
+      return vorpal;
+    }
+  }
+  return vorpal;
 }
 
 export function setConfig(vorpal: Vorpal, keypath: string, value: any) {
@@ -215,7 +270,7 @@ export async function applyGenerator(
   const match = featurePath.match(/([^\/]*)\/*$/);
   if (match) {
     const name = match[1];
-    const { message, color } = generator(featurePath, name, vorpal.config);
+    const { message, color } = generator(featurePath, name, vorpal.config, vorpal);
     vorpal.log(vorpal.chalk[color](message));
   }
 }

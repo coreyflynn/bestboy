@@ -28,10 +28,17 @@ declare interface Config {
   [key: string]: any;
   fileExtensions: {
     component: string;
+    componentTests: string;
   },
   equalityChecks: {
-    actionTests: '.toEqual',
+    actionTests: '.toEqual';
   },
+  imports: {
+    componentTests: string[];
+  },
+  wrappers: {
+    componentTests: string;
+  }
 }
 
 declare interface Vorpal {
@@ -47,11 +54,59 @@ declare interface Vorpal {
   show(): Vorpal;
   config: Config;
   configPath: string;
+  flowConfigPath: string | null;
+  primitiveTypes?: BestBoyTree
 }
 
 declare type BaseGeneratorFunction = (featurePath: string) => FileWriterOutput
 declare type NameGeneratorFunction = (
   featurePath: string,
   name: string,
-  config?: Config
+  config?: Config,
+  vorpla?: Vorpal
 ) => FileWriterOutput
+
+interface BestBoyNode {
+  name: string,
+  type: string,
+  optional: boolean,
+  value: BestBoyNode[] | string,
+  genericName?: string,
+}
+
+interface BestBoyTree {
+  [key: string]: BestBoyNode,
+}
+
+interface ESTreeNode {
+  type: string,
+  optional: boolean,
+  value: {
+    type: string,
+    properties: ESTreeNode[],
+    id?: {
+      name: string,
+    }
+    types?: ESTreeNode[],
+    elementType?: {
+      type: string,
+      id? : {
+        name: string,
+      }
+    }
+  },
+  key: {
+    name: string,
+  },
+  id: {
+    name: string,
+  },
+  right: {
+    properties: any,
+    type?: string,
+  },
+}
+
+interface Props {
+  [key: string]: any,
+}
