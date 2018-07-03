@@ -14,12 +14,12 @@ export function findFlowConfig(dir: string = process.cwd()): string | null {
   if (dir === '') {
     return null;
   }
-  
+
   if (fs.existsSync(config)) {
     return config;
   }
 
-  return findFlowConfig(dir.split(path.sep).slice(0,-1).join(path.sep));
+  return findFlowConfig(dir.split(path.sep).slice(0, -1).join(path.sep));
 }
 
 function getFullLibPath(flowConfigDir: string) {
@@ -59,7 +59,7 @@ function collectTypeDeclations(target: string): ESTreeNode[] {
   const declations: ESTreeNode[] = [];
 
   estraverse.traverse(ast, {
-    enter(node: ESTree.Node & ESTreeNode, parent: ESTree.Node) {
+    enter(node: any, parent: ESTree.Node) {
       if (node.type === 'DeclareTypeAlias') {
         declations.push(node);
       }
@@ -84,7 +84,7 @@ export function replaceGenericWithPrimitive(tree: BestBoyTree) {
     if (node.value instanceof Array) {
       node.value = node.value.map(replaceGenericWithPrimitive(tree));
     }
-    
+
     if (tree[node.value as string]) {
       node.value = tree[node.value as string].value;
     }
@@ -96,7 +96,6 @@ function createPrimitiveBestBoyTree(tree: BestBoyTree): BestBoyTree {
   forEach(node => (tree[node.name] = node), map(replaceGenericWithPrimitive(tree), values(tree)));
   return tree;
 }
-
 
 export function getPrimitivesTypes() {
   const primitivesTree = createPrimitiveBestBoyTree(

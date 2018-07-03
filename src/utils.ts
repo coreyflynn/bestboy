@@ -11,7 +11,6 @@ import * as faker from 'faker';
 import * as chalk from 'chalk';
 import * as cosmiconfig from 'cosmiconfig';
 import * as objectPath from 'object-path';
-import { compose, map, contains, addIndex } from 'ramda';
 import { findFlowConfig, getPrimitivesTypes, replaceGenericWithPrimitive } from './flowUtils';
 import defaultConfig from './defaultConfig';
 import pathPrompt from './prompts/pathPrompt';
@@ -57,7 +56,7 @@ export function transformNode(node: ESTreeNode) {
     }
     return transformed;
   }
-  
+
   transformed.value = node.value && node.value.type
     ? node.value.type.replace('TypeAnnotation', '')
     : [];
@@ -136,7 +135,7 @@ export function createPropVariations(target: string, vorpal?: Vorpal) {
   };
 
   estraverse.traverse(ast, {
-    enter(node: ESTree.Node & ESTreeNode, parent: ESTree.Node) {
+    enter(node: any, parent: ESTree.Node) {
       if (node.type === 'TypeAlias' && node.id.name === 'Props') {
         root.value.properties = node.right.properties;
       }
@@ -144,7 +143,6 @@ export function createPropVariations(target: string, vorpal?: Vorpal) {
     fallback: 'iteration',
   });
 
-  
   let props = transformNode(root);
   if (vorpal && vorpal.primitiveTypes) {
     props = replaceGenericWithPrimitive(vorpal.primitiveTypes)(props);
@@ -199,7 +197,7 @@ export function updateFlowTypes(vorpal: Vorpal): Vorpal {
   if (vorpal.flowConfigPath && candidateConfig && vorpal.flowConfigPath !== candidateConfig) {
     const  currentPathParts = path.dirname(vorpal.flowConfigPath).split('/');
     const  candidatePathParts = path.dirname(vorpal.flowConfigPath).split('/');
-    
+
     const currentConfigDepth = currentPathParts.length;
     const candidateConfigDepth = candidatePathParts.length;
     if (candidateConfigDepth >= currentConfigDepth) {
@@ -209,10 +207,8 @@ export function updateFlowTypes(vorpal: Vorpal): Vorpal {
       return vorpal;
     }
 
-    const candidateIsOffPath = compose(
-      contains(false),
-      addIndex(map)((item, idx) => item === currentPathParts[idx]),
-    )(candidatePathParts);
+    const candidateIsOffPath = candidatePathParts
+      .filter((item, idx) => item === currentPathParts[idx]).length > 0;
 
     if (candidateIsOffPath) {
       vorpal.log(vorpal.chalk.blue(`building types from ${candidateConfig}`));
