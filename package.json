@@ -1,6 +1,6 @@
 {
   "name": "bestboy",
-  "version": "2.6.0",
+  "version": "2.6.1",
   "description": "A React Dev's Assistant",
   "main": "lib/index.js",
   "files": [
