@@ -1,4 +1,0 @@
-// @flow
-declare module 'redux-persist' {
-  declare module.exports: any;
-}
