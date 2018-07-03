@@ -1,3 +1,13 @@
+<a name="2.6.0"></a>
+# 2.6.0 (2018-07-03)
+
+* :nut_and_bolt: Remove testing types ([bb0e782](https://github.com/coreyflynn/bestboy/commit/bb0e782))
+* :star2: Add support for nested custom types ([a706c99](https://github.com/coreyflynn/bestboy/commit/a706c99))
+* 2.6.0 ([06ea392](https://github.com/coreyflynn/bestboy/commit/06ea392))
+* chore: Update changelog ([bf5ed0d](https://github.com/coreyflynn/bestboy/commit/bf5ed0d))
+
+
+
 <a name="2.5.0"></a>
 # 2.5.0 (2018-04-11)
 
