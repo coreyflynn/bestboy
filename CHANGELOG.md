@@ -1,3 +1,13 @@
+<a name="2.5.0"></a>
+# 2.5.0 (2018-04-11)
+
+* :star2: (Config) Allow action test equality config ([9ae8472](https://github.com/coreyflynn/bestboy/commit/9ae8472))
+* 2.4.0 ([806958b](https://github.com/coreyflynn/bestboy/commit/806958b))
+* 2.5.0 ([3fbb3e8](https://github.com/coreyflynn/bestboy/commit/3fbb3e8))
+* chore: Update changelog ([a2267ce](https://github.com/coreyflynn/bestboy/commit/a2267ce))
+
+
+
 <a name="2.3.0"></a>
 # 2.3.0 (2018-01-29)
 
